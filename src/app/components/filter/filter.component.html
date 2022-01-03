@@ -1,0 +1,136 @@
+<form [formGroup]="form" [bindGroupQueryParam]="bindOptions" novalidate>
+  <app-filter-section
+    title="One Hand Weapons"
+    [items]="oneHandWeapons"
+    [form]="oneHandWeaponsForm"
+    [config]="oneHandWeaponsConfig"
+  ></app-filter-section>
+  <app-filter-section
+    title="Two Hand Weapons"
+    [items]="twoHandWeapons"
+    [form]="twoHandWeaponsForm"
+    [config]="twoHandWeaponsConfig"
+  ></app-filter-section>
+  <app-filter-section
+    title="Shields"
+    [items]="armours"
+    [form]="shieldsForm"
+    [config]="shieldsConfig"
+  ></app-filter-section>
+  <app-filter-section
+    title="Body Armours"
+    [items]="armours"
+    [form]="bodyArmoursForm"
+    [config]="bodyArmoursConfig"
+  ></app-filter-section>
+  <app-filter-section
+    title="Helmets"
+    [items]="armours"
+    [form]="helmetsForm"
+    [config]="helmetsConfig"
+  ></app-filter-section>
+  <app-filter-section
+    title="Boots"
+    [items]="armours"
+    [form]="bootsForm"
+    [config]="bootsConfig"
+  ></app-filter-section>
+  <app-filter-section
+    title="Gloves"
+    [items]="armours"
+    [form]="glovesForm"
+    [config]="glovesConfig"
+  ></app-filter-section>
+  <app-filter-section
+    title="Flasks"
+    [items]="flasks"
+    [form]="flasksForm"
+    [config]="flaskConfig"
+  ></app-filter-section>
+  <section>
+    <h1>Belts</h1>
+    <div fxLayout="row wrap" fxLayoutGap="10px">
+      <div *ngFor="let belt of belts; index as i" formArrayName="belts">
+        <mat-checkbox formControlName="{{ i }}">
+          {{ belt.value }}
+        </mat-checkbox>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>Amulets</h1>
+    <div fxLayout="row wrap" fxLayoutGap="10px">
+      <div *ngFor="let amulet of amulets; index as i" formArrayName="amulets">
+        <mat-checkbox formControlName="{{ i }}">
+          {{ amulet.value }}
+        </mat-checkbox>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>Rings</h1>
+    <div fxLayout="row wrap" fxLayoutGap="10px">
+      <div *ngFor="let ring of rings; index as i" formArrayName="rings">
+        <mat-checkbox formControlName="{{ i }}">
+          {{ ring.value }}
+        </mat-checkbox>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>Chromatic recipes</h1>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <div formArrayName="chromatics" *ngFor="let size of sizes; index as i">
+        <mat-checkbox formControlName="{{ i }}">
+          {{ size.label }}
+        </mat-checkbox>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>Quality recipes</h1>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <div class="label">Minimum quality</div>
+      <mat-radio-group formControlName="minQualityRecipe">
+        <mat-radio-button *ngFor="let quality of qualities" [value]="quality">{{
+          quality
+        }}</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </section>
+
+  <!-- <section>
+    <h1>Magic items</h1>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <mat-checkbox formControlName="str"
+        >Selected weapons and armours</mat-checkbox
+      >
+      <mat-checkbox formControlName="int"
+        >Other weapons and armours</mat-checkbox
+      >
+      <mat-checkbox formControlName="dex"
+        >Belts, rings, and amulets</mat-checkbox
+      >
+      <mat-checkbox formControlName="dex">Flasks</mat-checkbox>
+    </div>
+  </section>
+  <section>
+    <h1>Rare items</h1>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <mat-checkbox formControlName="str"
+        >Selected weapons and armours</mat-checkbox
+      >
+      <mat-checkbox formControlName="int"
+        >Other weapons and armours</mat-checkbox
+      >
+      <mat-checkbox formControlName="dex"
+        >Belts, rings, and amulets</mat-checkbox
+      >
+      <mat-checkbox formControlName="dex">Flasks</mat-checkbox>
+    </div>
+  </section> -->
+  <button mat-raised-button color="primary" (click)="generate()">
+    Generate
+  </button>
+</form>
+<pre>{{ script$ | async }}</pre>

@@ -1,0 +1,27 @@
+<form [formGroup]="form" [bindGroupQueryParam]="bindOptions" novalidate>
+  <div fxLayout="row" fxLayoutGap="10px">
+    <mat-form-field appearance="fill">
+      <input matInput formControlName="name" placeholder="Search by name" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-select formControlName="class" placeholder="Item class">
+        <mat-label>Item class</mat-label>
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let class of classes$ | async" [value]="class">
+          {{ class }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-checkbox formControlName="str">Armour</mat-checkbox>
+    <mat-checkbox formControlName="dex">Evasion</mat-checkbox>
+    <mat-checkbox formControlName="int">Energy Shield</mat-checkbox>
+    <mat-checkbox formControlName="strDex">Armour/Evasion</mat-checkbox>
+    <mat-checkbox formControlName="strInt">Armour/ES</mat-checkbox>
+    <mat-checkbox formControlName="dexInt">Evasion/ES</mat-checkbox>
+  </div>
+</form>
+<div *ngIf="items$ | async as items" class="item-results">
+  <div *ngFor="let item of items">
+    <div [innerHtml]="item.html"></div>
+  </div>
+</div>

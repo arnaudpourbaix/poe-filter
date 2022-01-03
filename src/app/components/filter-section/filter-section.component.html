@@ -1,0 +1,39 @@
+<section [formGroup]="form">
+  <h1>{{ title }}</h1>
+  <div fxLayout="column" fxLayoutGap="10px">
+    <div fxLayout="row" fxLayoutGap="10px">
+      <div formArrayName="selection" *ngFor="let item of items; index as i">
+        <mat-checkbox formControlName="{{ i }}">
+          {{ item.label }}
+        </mat-checkbox>
+      </div>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px" *ngIf="config.sockets > 0">
+      <div class="label">Minimum sockets</div>
+      <mat-radio-group formControlName="minSockets">
+        <mat-radio-button
+          *ngFor="let socket of sockets"
+          [value]="socket.number"
+          >{{ socket.number }}</mat-radio-button
+        >
+      </mat-radio-group>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px" *ngIf="config.sockets > 0">
+      <div class="label">Minimum links</div>
+      <mat-radio-group formControlName="minLinks">
+        <mat-radio-button *ngFor="let link of links" [value]="link">{{
+          link
+        }}</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <!-- <div fxLayout="row" fxLayoutGap="10px">
+      <mat-checkbox formControlName="showMagic"> Show Magic </mat-checkbox>
+      <mat-radio-group formControlName="magicSize" *ngIf="config.magicSizes">
+        <mat-radio-button *ngFor="let size of sizes" [value]="size.label">{{
+          size.label
+        }}</mat-radio-button>
+        <span class="legend">(max item size)</span>
+      </mat-radio-group>
+    </div> -->
+  </div>
+</section>

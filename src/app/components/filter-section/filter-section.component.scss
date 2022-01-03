@@ -1,0 +1,30 @@
+h1 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+section {
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: papayawhip;
+  padding: 5px;
+  margin-bottom: 1rem;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+.label {
+  width: 10rem;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 2rem;
+}
+
+.legend {
+  display: inline-block;
+  margin-left: 1rem;
+  font-style: italic;
+}
