@@ -26,7 +26,11 @@ export class FilterService {
         this.generateFlasks(config.flasks, items, script);
         this.generateWeapons(config.oneHandWeapons, items, script);
         this.generateWeapons(config.twoHandWeapons, items, script);
-        this.generateArmours(config.bodyArmours, items, script);
+        this.generateArmours('Body Armours', config.bodyArmours, items, script);
+        this.generateArmours('Boots', config.boots, items, script);
+        this.generateArmours('Gloves', config.gloves, items, script);
+        this.generateArmours('Helmets', config.helmets, items, script);
+        this.generateArmours('Shields', config.shields, items, script);
         this.generateBaseTypes(config.belts, script);
         this.generateBaseTypes(config.amulets, script);
         this.generateBaseTypes(config.rings, script);
@@ -63,35 +67,34 @@ export class FilterService {
   }
 
   private generateChromatics(sizes: string[], script: string[]) {
-    sizes.forEach((s) => {
-      this.generateBlock(
-        true,
-        [
-          `Width ${s.substring(0, 1)}`,
-          `Height ${s.substring(2, 3)}`,
-          'Rarity Rare',
-          'SocketGroup "RGB"',
-          'SetFontSize 40',
-          'SetTextColor 0 0 0 255',
-          'SetBorderColor 255 255 119',
-          'SetBackgroundColor 130 110 110 255',
-        ],
-        script
-      );
-      this.generateBlock(
-        true,
-        [
-          `Width ${s.substring(0, 1)}`,
-          `Height ${s.substring(2, 3)}`,
-          'Rarity <= Magic',
-          'SocketGroup "RGB"',
-          'SetFontSize 40',
-          'SetTextColor 0 0 0 255',
-          'SetBorderColor 0 0 0 255',
-          'SetBackgroundColor 130 110 110 255',
-        ],
-        script
-      );
+    this.itemService.sizes.forEach((size) => {
+      const magic = [
+        `Width ${size.value.substring(0, 1)}`,
+        `Height ${size.value.substring(2, 3)}`,
+        'Rarity Rare',
+        'SocketGroup "RGB"',
+        'SetFontSize 40',
+        'SetTextColor 0 0 0 255',
+        'SetBorderColor 255 255 119',
+        'SetBackgroundColor 130 110 110 255',
+      ];
+      const rare = [
+        `Width ${size.value.substring(0, 1)}`,
+        `Height ${size.value.substring(2, 3)}`,
+        'Rarity <= Magic',
+        'SocketGroup "RGB"',
+        'SetFontSize 40',
+        'SetTextColor 0 0 0 255',
+        'SetBorderColor 0 0 0 255',
+        'SetBackgroundColor 130 110 110 255',
+      ];
+      //   if (sizes.includes(size.value)) {
+      //     this.generateBlock(true, magic, script);
+      //     this.generateBlock(true, rare, script);
+      //   }
+      const cont = sizes.includes(size.value) ? '' : 'Continue';
+      this.generateBlock(true, [...magic, cont], script);
+      this.generateBlock(true, [...rare, cont], script);
     });
   }
 
@@ -123,32 +126,30 @@ export class FilterService {
   }
 
   private generateArmours(
+    armourClass: string,
     config: GenerateArmourConfig,
     items: Item[],
     script: string[]
   ) {
     config.types.forEach((armourType) => {
-      const armourClasses = this.itemService.armourClasses;
-      armourClasses.forEach((armourClass) => {
-        const armours = this.itemService.filterItemsByArmourTypeAndClass(
-          items,
-          armourType,
-          armourClass
+      const armours = this.itemService.filterItemsByArmourTypeAndClass(
+        items,
+        armourType,
+        armourClass
+      );
+      armours.forEach((a, i) => {
+        const nextArmour = armours[i + 1] as Item;
+        this.generateBlock(
+          true,
+          [
+            `Class "${armourClass}"`,
+            `BaseType "${a.name}"`,
+            a.dropLevel < 60 ? `AreaLevel < ${nextArmour.dropLevel}` : '',
+            `Sockets >= ${config.minSockets}`,
+            config.minLinks ? `LinkedSockets >= ${config.minLinks}` : '',
+          ],
+          script
         );
-        armours.forEach((a, i) => {
-          const nextArmour = armours[i + 1] as Item;
-          this.generateBlock(
-            true,
-            [
-              `Class "${armourClass}"`,
-              `BaseType "${a.name}"`,
-              a.dropLevel < 60 ? `AreaLevel < ${nextArmour.dropLevel}` : '',
-              `Sockets >= ${config.minSockets}`,
-              config.minLinks ? `LinkedSockets >= ${config.minLinks}` : '',
-            ],
-            script
-          );
-        });
       });
     });
   }

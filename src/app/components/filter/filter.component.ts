@@ -195,7 +195,7 @@ export class FilterComponent implements OnInit {
           minSockets: +params['k'],
           minLinks: +params['l'],
         },
-        gloves: {
+        boots: {
           selection: this.queryParamsToForm(
             params['m'],
             this.form.controls.gloves.value.selection.length
@@ -203,7 +203,7 @@ export class FilterComponent implements OnInit {
           minSockets: +params['n'],
           minLinks: +params['o'],
         },
-        boots: {
+        gloves: {
           selection: this.queryParamsToForm(
             params['p'],
             this.form.controls.boots.value.selection.length
