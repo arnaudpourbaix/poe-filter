@@ -8,12 +8,16 @@ export interface GenerateWeaponConfig {
   classes: string[];
   minSockets: number;
   minLinks: number;
+  minSocketsHighlight: boolean;
+  minLinksHighlight: boolean;
 }
 
 export interface GenerateArmourConfig {
   types: string[];
   minSockets: number;
   minLinks: number;
+  minSocketsHighlight: boolean;
+  minLinksHighlight: boolean;
 }
 
 export interface GenerateConfig {

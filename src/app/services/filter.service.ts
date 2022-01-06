@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs';
+import { forkJoin, map } from 'rxjs';
 import {
   GenerateArmourConfig,
   GenerateConfig,
@@ -7,19 +8,24 @@ import {
   GenerateWeaponConfig,
 } from '../models/generate-config';
 import { Item } from '../models/item';
-import { Size } from '../models/size';
 import { ItemService } from './item.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FilterService {
-  constructor(private readonly itemService: ItemService) {}
+  constructor(
+    private readonly http: HttpClient,
+    private readonly itemService: ItemService
+  ) {}
 
   generate(config: GenerateConfig) {
     console.log(config);
-    return this.itemService.getItems().pipe(
-      map((items) => {
+    return forkJoin([
+      this.itemService.getItems(),
+      this.http.get('assets/template.filter', { responseType: 'text' }),
+    ]).pipe(
+      map(([items, template]) => {
         const script = [] as string[];
         this.generateChromatics(config.chromatics, script);
         this.generateQualityRecipes(config.minQualityRecipe, script);
@@ -34,8 +40,8 @@ export class FilterService {
         this.generateBaseTypes(config.belts, script);
         this.generateBaseTypes(config.amulets, script);
         this.generateBaseTypes(config.rings, script);
-        // script.push('Hide');
-        return script.join('\r\n');
+        return template.replace('{{INSERT}}', script.join('\r\n'));
+        // return script.join('\r\n');
       })
     );
   }
@@ -88,10 +94,6 @@ export class FilterService {
         'SetBorderColor 0 0 0 255',
         'SetBackgroundColor 130 110 110 255',
       ];
-      //   if (sizes.includes(size.value)) {
-      //     this.generateBlock(true, magic, script);
-      //     this.generateBlock(true, rare, script);
-      //   }
       const cont = sizes.includes(size.value) ? '' : 'Continue';
       this.generateBlock(true, [...magic, cont], script);
       this.generateBlock(true, [...rare, cont], script);
@@ -108,8 +110,21 @@ export class FilterService {
     }
     config.classes.forEach((c) => {
       const weapons = items.filter((i) => i.class === c);
+      if (config.minLinksHighlight) {
+      }
+
       weapons.forEach((w, i) => {
         const nextWeapon = weapons[i + 1] as Item;
+        // this.generateBlock(
+        //   true,
+        //   [
+        //     `Class "${c}"`,
+        //     `BaseType "${w.name}"`,
+        //     w.dropLevel < 60 ? `AreaLevel < ${nextWeapon.dropLevel}` : '',
+        //     'Continue',
+        //   ],
+        //   script
+        // );
         this.generateBlock(
           true,
           [

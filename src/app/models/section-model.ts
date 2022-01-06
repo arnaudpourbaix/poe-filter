@@ -6,5 +6,7 @@ export interface ItemView {
 export interface SectionForm {
   selection: boolean[];
   minSockets: number;
+  minSocketsHighlight: boolean;
   minLinks: number;
+  minLinksHighlight: boolean;
 }

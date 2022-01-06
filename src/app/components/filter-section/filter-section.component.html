@@ -17,6 +17,14 @@
           >{{ socket.number }}</mat-radio-button
         >
       </mat-radio-group>
+      <mat-radio-group formControlName="minSocketsHighlight" class="highlight">
+        <mat-radio-button
+          *ngFor="let output of outputs"
+          [value]="output.value"
+          [matTooltip]="output.tooltip"
+          >{{ output.label }}</mat-radio-button
+        >
+      </mat-radio-group>
     </div>
     <div fxLayout="row" fxLayoutGap="10px" *ngIf="config.sockets > 0">
       <div class="label">Minimum links</div>
@@ -25,15 +33,14 @@
           link
         }}</mat-radio-button>
       </mat-radio-group>
-    </div>
-    <!-- <div fxLayout="row" fxLayoutGap="10px">
-      <mat-checkbox formControlName="showMagic"> Show Magic </mat-checkbox>
-      <mat-radio-group formControlName="magicSize" *ngIf="config.magicSizes">
-        <mat-radio-button *ngFor="let size of sizes" [value]="size.label">{{
-          size.label
-        }}</mat-radio-button>
-        <span class="legend">(max item size)</span>
+      <mat-radio-group formControlName="minLinksHighlight" class="highlight">
+        <mat-radio-button
+          *ngFor="let output of outputs"
+          [value]="output.value"
+          [matTooltip]="output.tooltip"
+          >{{ output.label }}</mat-radio-button
+        >
       </mat-radio-group>
-    </div> -->
+    </div>
   </div>
 </section>

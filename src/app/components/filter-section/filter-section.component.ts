@@ -27,6 +27,19 @@ export class FilterSectionComponent implements OnInit {
   links!: number[];
   sizes = this.itemService.sizes;
 
+  outputs = [
+    {
+      label: 'Show',
+      tooltip: 'Show on match and hide unmatched items',
+      value: false,
+    },
+    {
+      label: 'Highlight',
+      tooltip: 'Highlight on match but show unmatched items',
+      value: true,
+    },
+  ];
+
   constructor(private readonly itemService: ItemService) {}
 
   ngOnInit(): void {

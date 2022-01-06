@@ -136,7 +136,8 @@ export class ItemSearchComponent {
             matchDexInt;
           return matchName && matchClass && matchArmour;
         })
-        .sort((a, b) => a.dropLevel - b.dropLevel);
+        //.sort((a, b) => a.dropLevel - b.dropLevel);
+        .sort(this.sortBy((a) => a.name));
       console.log(results);
       return results;
     })
@@ -146,4 +147,13 @@ export class ItemSearchComponent {
     private readonly fb: FormBuilder,
     private readonly itemService: ItemService
   ) {}
+
+  private sortBy<T extends { [key: string]: any }>(
+    key: string | ((obj: T) => any)
+  ) {
+    const getValue = (val: T) =>
+      typeof key === 'string' ? val[key] : key(val);
+    return (a: T, b: T) =>
+      getValue(a) > getValue(b) ? 1 : getValue(b) > getValue(a) ? -1 : 0;
+  }
 }
