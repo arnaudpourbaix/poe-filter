@@ -12,12 +12,23 @@
         </mat-option>
       </mat-select>
     </mat-form-field>
-    <mat-checkbox formControlName="str">Armour</mat-checkbox>
-    <mat-checkbox formControlName="dex">Evasion</mat-checkbox>
-    <mat-checkbox formControlName="int">Energy Shield</mat-checkbox>
-    <mat-checkbox formControlName="strDex">Armour/Evasion</mat-checkbox>
-    <mat-checkbox formControlName="strInt">Armour/ES</mat-checkbox>
-    <mat-checkbox formControlName="dexInt">Evasion/ES</mat-checkbox>
+    <div
+      formArrayName="armourTypes"
+      *ngFor="let type of armourTypes; index as i"
+    >
+      <mat-checkbox formControlName="{{ i }}">
+        {{ type.label }}
+      </mat-checkbox>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutGap="10px">
+    <mat-radio-group formControlName="sortProperty">
+      <mat-radio-button
+        *ngFor="let sortProperty of sortProperties"
+        [value]="sortProperty"
+        >{{ sortProperty }}</mat-radio-button
+      >
+    </mat-radio-group>
   </div>
 </form>
 <div *ngIf="items$ | async as items" class="item-results">

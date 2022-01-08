@@ -1,23 +1,20 @@
-import { Size } from './size';
-
 export interface GenerateFlaskConfig {
   classes: string[];
 }
 
-export interface GenerateWeaponConfig {
-  classes: string[];
+export interface GenerateItemConfig {
   minSockets: number;
   minLinks: number;
-  minSocketsHighlight: boolean;
-  minLinksHighlight: boolean;
+  sockets: number;
+  links: number;
 }
 
-export interface GenerateArmourConfig {
+export interface GenerateWeaponConfig extends GenerateItemConfig {
+  classes: string[];
+}
+
+export interface GenerateArmourConfig extends GenerateItemConfig {
   types: string[];
-  minSockets: number;
-  minLinks: number;
-  minSocketsHighlight: boolean;
-  minLinksHighlight: boolean;
 }
 
 export interface GenerateConfig {
@@ -32,6 +29,8 @@ export interface GenerateConfig {
   belts: string[];
   rings: string[];
   amulets: string[];
-  chromatics: string[];
-  minQualityRecipe: number;
+  chromaticSizes: string[];
+  rareSizes: string[];
+  minQualityFlask: number;
+  minQualityGem: number;
 }

@@ -13,31 +13,31 @@
   ></app-filter-section>
   <app-filter-section
     title="Shields"
-    [items]="armours"
+    [items]="armourTypes"
     [form]="shieldsForm"
     [config]="shieldsConfig"
   ></app-filter-section>
   <app-filter-section
     title="Body Armours"
-    [items]="armours"
+    [items]="armourTypes"
     [form]="bodyArmoursForm"
     [config]="bodyArmoursConfig"
   ></app-filter-section>
   <app-filter-section
     title="Helmets"
-    [items]="armours"
+    [items]="armourTypes"
     [form]="helmetsForm"
     [config]="helmetsConfig"
   ></app-filter-section>
   <app-filter-section
     title="Boots"
-    [items]="armours"
+    [items]="armourTypes"
     [form]="bootsForm"
     [config]="bootsConfig"
   ></app-filter-section>
   <app-filter-section
     title="Gloves"
-    [items]="armours"
+    [items]="armourTypes"
     [form]="glovesForm"
     [config]="glovesConfig"
   ></app-filter-section>
@@ -78,58 +78,53 @@
     </div>
   </section>
   <section>
-    <h1>Chromatic recipes</h1>
-    <div fxLayout="row" fxLayoutGap="10px">
-      <div formArrayName="chromatics" *ngFor="let size of sizes; index as i">
-        <mat-checkbox formControlName="{{ i }}">
-          {{ size.label }}
-        </mat-checkbox>
+    <h1>Currency recipes</h1>
+    <div fxLayout="column" fxLayoutGap="10px">
+      <div fxLayout="row" fxLayoutGap="10px">
+        <div class="label">Chromatics</div>
+        <div
+          formArrayName="chromaticSizes"
+          *ngFor="let size of chromaticSizes; index as i"
+        >
+          <mat-checkbox formControlName="{{ i }}">
+            {{ size.label }}
+          </mat-checkbox>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutGap="10px">
+        <div class="label">Alteration shards (rare max size)</div>
+        <div
+          formArrayName="rareSizes"
+          *ngFor="let size of rareSizes; index as i"
+        >
+          <mat-checkbox formControlName="{{ i }}">
+            {{ size.label }}
+          </mat-checkbox>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutGap="10px">
+        <div class="label">Quality gems</div>
+        <mat-radio-group formControlName="qGems">
+          <mat-radio-button
+            *ngFor="let quality of qualities"
+            [value]="quality"
+            >{{ quality }}</mat-radio-button
+          >
+        </mat-radio-group>
+      </div>
+      <div fxLayout="row" fxLayoutGap="10px">
+        <div class="label">Quality flasks</div>
+        <mat-radio-group formControlName="qFlasks">
+          <mat-radio-button
+            *ngFor="let quality of qualities"
+            [value]="quality"
+            >{{ quality }}</mat-radio-button
+          >
+        </mat-radio-group>
       </div>
     </div>
   </section>
-  <section>
-    <h1>Quality recipes</h1>
-    <div fxLayout="row" fxLayoutGap="10px">
-      <div class="label">Minimum quality</div>
-      <mat-radio-group formControlName="minQualityRecipe">
-        <mat-radio-button *ngFor="let quality of qualities" [value]="quality">{{
-          quality
-        }}</mat-radio-button>
-      </mat-radio-group>
-    </div>
-  </section>
-
-  <!-- <section>
-    <h1>Magic items</h1>
-    <div fxLayout="row" fxLayoutGap="10px">
-      <mat-checkbox formControlName="str"
-        >Selected weapons and armours</mat-checkbox
-      >
-      <mat-checkbox formControlName="int"
-        >Other weapons and armours</mat-checkbox
-      >
-      <mat-checkbox formControlName="dex"
-        >Belts, rings, and amulets</mat-checkbox
-      >
-      <mat-checkbox formControlName="dex">Flasks</mat-checkbox>
-    </div>
-  </section>
-  <section>
-    <h1>Rare items</h1>
-    <div fxLayout="row" fxLayoutGap="10px">
-      <mat-checkbox formControlName="str"
-        >Selected weapons and armours</mat-checkbox
-      >
-      <mat-checkbox formControlName="int"
-        >Other weapons and armours</mat-checkbox
-      >
-      <mat-checkbox formControlName="dex"
-        >Belts, rings, and amulets</mat-checkbox
-      >
-      <mat-checkbox formControlName="dex">Flasks</mat-checkbox>
-    </div>
-  </section> -->
-  <button mat-raised-button color="primary" (click)="generate()">
+  <button type="button" mat-raised-button color="primary" (click)="generate()">
     Generate
   </button>
 </form>

@@ -21,8 +21,10 @@ interface Form {
   belts: boolean[];
   rings: boolean[];
   amulets: boolean[];
-  minQualityRecipe: number;
-  chromatics: boolean[];
+  qFlasks: number;
+  qGems: number;
+  rareSizes: boolean[];
+  chromaticSizes: boolean[];
 }
 
 @Component({
@@ -31,7 +33,7 @@ interface Form {
   styleUrls: ['./filter.component.scss'],
 })
 export class FilterComponent implements OnInit {
-  armours = this.itemService.armourTypes;
+  armourTypes = this.itemService.armourTypes;
   oneHandWeapons = this.itemService.oneHandWeapons.map(
     (a) => ({ value: a, label: a } as ItemView)
   );
@@ -41,7 +43,9 @@ export class FilterComponent implements OnInit {
   flasks = this.itemService.flasks.map(
     (a) => ({ value: a, label: a } as ItemView)
   );
-  sizes = [...this.itemService.sizes].filter((i) => i.chromatic);
+
+  chromaticSizes = [...this.itemService.sizes].filter((i) => i.chromatic);
+  rareSizes = this.itemService.sizes;
 
   belts = this.itemService.belts.map(
     (a) => ({ value: a, label: a } as ItemView)
@@ -89,8 +93,8 @@ export class FilterComponent implements OnInit {
       ),
       minSockets: [1],
       minLinks: [0],
-      minSocketsHighlight: [false],
-      minLinksHighlight: [false],
+      sockets: [1],
+      links: [0],
     }),
     twoHandWeapons: this.fb.group({
       selection: new FormArray(
@@ -98,56 +102,70 @@ export class FilterComponent implements OnInit {
       ),
       minSockets: [1],
       minLinks: [0],
-      minSocketsHighlight: [false],
-      minLinksHighlight: [false],
+      sockets: [1],
+      links: [0],
     }),
     bodyArmours: this.fb.group({
-      selection: new FormArray(this.armours.map(() => new FormControl(false))),
+      selection: new FormArray(
+        this.armourTypes.map(() => new FormControl(false))
+      ),
       minSockets: [3],
-      minLinks: [3],
-      minSocketsHighlight: [false],
-      minLinksHighlight: [false],
+      minLinks: [0],
+      sockets: [6],
+      links: [6],
     }),
     helmets: this.fb.group({
-      selection: new FormArray(this.armours.map(() => new FormControl(false))),
+      selection: new FormArray(
+        this.armourTypes.map(() => new FormControl(false))
+      ),
       minSockets: [1],
       minLinks: [0],
-      minSocketsHighlight: [false],
-      minLinksHighlight: [false],
+      sockets: [1],
+      links: [0],
     }),
     gloves: this.fb.group({
-      selection: new FormArray(this.armours.map(() => new FormControl(false))),
+      selection: new FormArray(
+        this.armourTypes.map(() => new FormControl(false))
+      ),
       minSockets: [1],
       minLinks: [0],
-      minSocketsHighlight: [false],
-      minLinksHighlight: [false],
+      sockets: [1],
+      links: [0],
     }),
     boots: this.fb.group({
-      selection: new FormArray(this.armours.map(() => new FormControl(false))),
+      selection: new FormArray(
+        this.armourTypes.map(() => new FormControl(false))
+      ),
       minSockets: [1],
       minLinks: [0],
-      minSocketsHighlight: [false],
-      minLinksHighlight: [false],
+      sockets: [1],
+      links: [0],
     }),
     shields: this.fb.group({
-      selection: new FormArray(this.armours.map(() => new FormControl(false))),
+      selection: new FormArray(
+        this.armourTypes.map(() => new FormControl(false))
+      ),
       minSockets: [1],
       minLinks: [0],
-      minSocketsHighlight: [false],
-      minLinksHighlight: [false],
+      sockets: [1],
+      links: [0],
     }),
     flasks: this.fb.group({
       selection: new FormArray(this.flasks.map(() => new FormControl(false))),
       minSockets: [0],
       minLinks: [0],
-      minSocketsHighlight: [false],
-      minLinksHighlight: [false],
+      sockets: [1],
+      links: [0],
     }),
     amulets: new FormArray(this.amulets.map(() => new FormControl(true))),
     rings: new FormArray(this.rings.map(() => new FormControl(true))),
     belts: new FormArray(this.belts.map(() => new FormControl(true))),
-    chromatics: new FormArray(this.sizes.map(() => new FormControl(true))),
-    minQualityRecipe: [5],
+    rareSizes: new FormArray(this.rareSizes.map(() => new FormControl(true))),
+    chromaticSizes: new FormArray(
+      this.chromaticSizes.map(() => new FormControl(true))
+    ),
+    qFlasks: [5],
+    qGems: [5],
   }) as TypedFormGroup<Form>;
 
   bindOptions: Partial<BindQueryParamOptions<Form>> = {
@@ -162,8 +180,8 @@ export class FilterComponent implements OnInit {
           ),
           minSockets: +params['aa'],
           minLinks: +params['ab'],
-          minSocketsHighlight: params['ac'] === 'true',
-          minLinksHighlight: params['ad'] === 'true',
+          sockets: +params['ac'],
+          links: +params['ad'],
         },
         twoHandWeapons: {
           selection: this.queryParamsToForm(
@@ -172,8 +190,8 @@ export class FilterComponent implements OnInit {
           ),
           minSockets: +params['ba'],
           minLinks: +params['bb'],
-          minSocketsHighlight: params['bc'] === 'true',
-          minLinksHighlight: params['bd'] === 'true',
+          sockets: +params['bc'],
+          links: +params['bd'],
         },
         bodyArmours: {
           selection: this.queryParamsToForm(
@@ -182,8 +200,8 @@ export class FilterComponent implements OnInit {
           ),
           minSockets: +params['ca'],
           minLinks: +params['cb'],
-          minSocketsHighlight: params['cc'] === 'true',
-          minLinksHighlight: params['cd'] === 'true',
+          sockets: +params['cc'],
+          links: +params['cd'],
         },
         helmets: {
           selection: this.queryParamsToForm(
@@ -192,8 +210,8 @@ export class FilterComponent implements OnInit {
           ),
           minSockets: +params['da'],
           minLinks: +params['db'],
-          minSocketsHighlight: params['dc'] === 'true',
-          minLinksHighlight: params['dd'] === 'true',
+          sockets: +params['dc'],
+          links: +params['dd'],
         },
         boots: {
           selection: this.queryParamsToForm(
@@ -202,8 +220,8 @@ export class FilterComponent implements OnInit {
           ),
           minSockets: +params['ea'],
           minLinks: +params['eb'],
-          minSocketsHighlight: params['ec'] === 'true',
-          minLinksHighlight: params['ed'] === 'true',
+          sockets: +params['ec'],
+          links: +params['ed'],
         },
         gloves: {
           selection: this.queryParamsToForm(
@@ -212,8 +230,8 @@ export class FilterComponent implements OnInit {
           ),
           minSockets: +params['fa'],
           minLinks: +params['fb'],
-          minSocketsHighlight: params['fc'] === 'true',
-          minLinksHighlight: params['fd'] === 'true',
+          sockets: +params['fc'],
+          links: +params['fd'],
         },
         shields: {
           selection: this.queryParamsToForm(
@@ -222,8 +240,8 @@ export class FilterComponent implements OnInit {
           ),
           minSockets: +params['ga'],
           minLinks: +params['gb'],
-          minSocketsHighlight: params['gc'] === 'true',
-          minLinksHighlight: params['gd'] === 'true',
+          sockets: +params['gc'],
+          links: +params['gd'],
         },
         flasks: {
           selection: this.queryParamsToForm(
@@ -231,11 +249,16 @@ export class FilterComponent implements OnInit {
             this.form.controls.flasks.value.selection.length
           ),
         } as SectionForm,
-        chromatics: this.queryParamsToForm(
-          params['i'],
-          this.form.controls.chromatics.value.length
+        chromaticSizes: this.queryParamsToForm(
+          params['ia'],
+          this.form.controls.chromaticSizes.value.length
         ),
-        minQualityRecipe: +params['j'],
+        rareSizes: this.queryParamsToForm(
+          params['ib'],
+          this.form.controls.rareSizes.value.length
+        ),
+        qFlasks: +params['ic'],
+        qGems: +params['id'],
         belts: this.queryParamsToForm(
           params['k'],
           this.form.controls.belts.value.length
@@ -255,41 +278,43 @@ export class FilterComponent implements OnInit {
         a: this.formToQueryParams(form.oneHandWeapons?.selection ?? []),
         aa: form.oneHandWeapons?.minSockets,
         ab: form.oneHandWeapons?.minLinks,
-        ac: form.oneHandWeapons?.minSocketsHighlight,
-        ad: form.oneHandWeapons?.minLinksHighlight,
+        ac: form.oneHandWeapons?.sockets,
+        ad: form.oneHandWeapons?.links,
         b: this.formToQueryParams(form.twoHandWeapons?.selection ?? []),
         ba: form.twoHandWeapons?.minSockets,
         bb: form.twoHandWeapons?.minLinks,
-        bc: form.twoHandWeapons?.minSocketsHighlight,
-        bd: form.twoHandWeapons?.minLinksHighlight,
+        bc: form.twoHandWeapons?.sockets,
+        bd: form.twoHandWeapons?.links,
         c: this.formToQueryParams(form.bodyArmours?.selection ?? []),
         ca: form.bodyArmours?.minSockets,
         cb: form.bodyArmours?.minLinks,
-        cc: form.bodyArmours?.minSocketsHighlight,
-        cd: form.bodyArmours?.minLinksHighlight,
+        cc: form.bodyArmours?.sockets,
+        cd: form.bodyArmours?.links,
         d: this.formToQueryParams(form.helmets?.selection ?? []),
         da: form.helmets?.minSockets,
         db: form.helmets?.minLinks,
-        dc: form.helmets?.minSocketsHighlight,
-        dd: form.helmets?.minLinksHighlight,
+        dc: form.helmets?.sockets,
+        dd: form.helmets?.links,
         e: this.formToQueryParams(form.boots?.selection ?? []),
         ea: form.boots?.minSockets,
         eb: form.boots?.minLinks,
-        ec: form.boots?.minSocketsHighlight,
-        ed: form.boots?.minLinksHighlight,
+        ec: form.boots?.sockets,
+        ed: form.boots?.links,
         f: this.formToQueryParams(form.gloves?.selection ?? []),
         fa: form.gloves?.minSockets,
         fb: form.gloves?.minLinks,
-        fc: form.gloves?.minSocketsHighlight,
-        fd: form.gloves?.minLinksHighlight,
+        fc: form.gloves?.sockets,
+        fd: form.gloves?.links,
         g: this.formToQueryParams(form.shields?.selection ?? []),
         ga: form.shields?.minSockets,
         gb: form.shields?.minLinks,
-        gc: form.shields?.minSocketsHighlight,
-        gd: form.shields?.minLinksHighlight,
+        gc: form.shields?.sockets,
+        gd: form.shields?.links,
         h: this.formToQueryParams(form.flasks?.selection ?? []),
-        i: this.formToQueryParams(form.chromatics ?? []),
-        j: form.minQualityRecipe,
+        ia: this.formToQueryParams(form.chromaticSizes ?? []),
+        ib: this.formToQueryParams(form.rareSizes ?? []),
+        ic: form.qFlasks,
+        id: form.qGems,
         k: this.formToQueryParams(form.belts ?? []),
         l: this.formToQueryParams(form.amulets ?? []),
         m: this.formToQueryParams(form.rings ?? []),
@@ -334,7 +359,6 @@ export class FilterComponent implements OnInit {
     const form = this.form.value;
     this.script$ = this.filterService
       .generate({
-        minQualityRecipe: form.minQualityRecipe,
         oneHandWeapons: {
           classes: this.getSelection(
             form.oneHandWeapons.selection,
@@ -342,8 +366,8 @@ export class FilterComponent implements OnInit {
           ),
           minSockets: form.oneHandWeapons.minSockets,
           minLinks: form.oneHandWeapons.minLinks,
-          minSocketsHighlight: form.oneHandWeapons.minSocketsHighlight,
-          minLinksHighlight: form.oneHandWeapons.minLinksHighlight,
+          sockets: form.oneHandWeapons.sockets,
+          links: form.oneHandWeapons.links,
         },
         twoHandWeapons: {
           classes: this.getSelection(
@@ -352,48 +376,57 @@ export class FilterComponent implements OnInit {
           ),
           minSockets: form.twoHandWeapons.minSockets,
           minLinks: form.twoHandWeapons.minLinks,
-          minSocketsHighlight: form.twoHandWeapons.minSocketsHighlight,
-          minLinksHighlight: form.twoHandWeapons.minLinksHighlight,
+          sockets: form.twoHandWeapons.sockets,
+          links: form.twoHandWeapons.links,
         },
         bodyArmours: {
-          types: this.getSelection(form.bodyArmours.selection, this.armours),
+          types: this.getSelection(
+            form.bodyArmours.selection,
+            this.armourTypes
+          ),
           minSockets: form.bodyArmours.minSockets,
           minLinks: form.bodyArmours.minLinks,
-          minSocketsHighlight: form.bodyArmours.minSocketsHighlight,
-          minLinksHighlight: form.bodyArmours.minLinksHighlight,
+          sockets: form.bodyArmours.sockets,
+          links: form.bodyArmours.links,
         },
         helmets: {
-          types: this.getSelection(form.helmets.selection, this.armours),
+          types: this.getSelection(form.helmets.selection, this.armourTypes),
           minSockets: form.helmets.minSockets,
           minLinks: form.helmets.minLinks,
-          minSocketsHighlight: form.helmets.minSocketsHighlight,
-          minLinksHighlight: form.helmets.minLinksHighlight,
+          sockets: form.helmets.sockets,
+          links: form.helmets.links,
         },
         boots: {
-          types: this.getSelection(form.boots.selection, this.armours),
+          types: this.getSelection(form.boots.selection, this.armourTypes),
           minSockets: form.boots.minSockets,
           minLinks: form.boots.minLinks,
-          minSocketsHighlight: form.boots.minSocketsHighlight,
-          minLinksHighlight: form.boots.minLinksHighlight,
+          sockets: form.boots.sockets,
+          links: form.boots.links,
         },
         gloves: {
-          types: this.getSelection(form.gloves.selection, this.armours),
+          types: this.getSelection(form.gloves.selection, this.armourTypes),
           minSockets: form.gloves.minSockets,
           minLinks: form.gloves.minLinks,
-          minSocketsHighlight: form.gloves.minSocketsHighlight,
-          minLinksHighlight: form.gloves.minLinksHighlight,
+          sockets: form.gloves.sockets,
+          links: form.gloves.links,
         },
         shields: {
-          types: this.getSelection(form.shields.selection, this.armours),
+          types: this.getSelection(form.shields.selection, this.armourTypes),
           minSockets: form.shields.minSockets,
           minLinks: form.shields.minLinks,
-          minSocketsHighlight: form.shields.minSocketsHighlight,
-          minLinksHighlight: form.shields.minLinksHighlight,
+          sockets: form.shields.sockets,
+          links: form.shields.links,
         },
         flasks: {
           classes: this.getSelection(form.flasks.selection, this.flasks),
         },
-        chromatics: this.getSelection(form.chromatics, this.sizes),
+        chromaticSizes: this.getSelection(
+          form.chromaticSizes,
+          this.chromaticSizes
+        ),
+        rareSizes: this.getSelection(form.rareSizes, this.rareSizes),
+        minQualityFlask: form.qFlasks,
+        minQualityGem: form.qGems,
         belts: this.getSelection(form.belts, this.belts),
         amulets: this.getSelection(form.amulets, this.amulets),
         rings: this.getSelection(form.rings, this.rings),
@@ -434,14 +467,5 @@ export class FilterComponent implements OnInit {
         checked ? [...acc, items[i].value] : acc,
       []
     );
-  }
-
-  private sortBy<T extends { [key: string]: any }>(
-    key: string | ((obj: T) => any)
-  ) {
-    const getValue = (val: T) =>
-      typeof key === 'string' ? val[key] : key(val);
-    return (a: T, b: T) =>
-      getValue(a) > getValue(b) ? 1 : getValue(b) > getValue(a) ? -1 : 0;
   }
 }

@@ -33,14 +33,6 @@ export class ItemService {
     { label: '2x4', value: '2x4', chromatic: true },
   ];
 
-  readonly armourClasses = [
-    'Body Armours',
-    'Boots',
-    'Gloves',
-    'Helmets',
-    'Shields',
-  ];
-
   readonly armourTypes = [
     { label: 'Armour', value: 'str' },
     { label: 'Armour/Evasion', value: 'strDex' },
@@ -48,6 +40,14 @@ export class ItemService {
     { label: 'Energy Shield', value: 'int' },
     { label: 'Evasion', value: 'dex' },
     { label: 'Evasion/ES', value: 'dexInt' },
+  ];
+
+  readonly armourClasses = [
+    'Body Armours',
+    'Boots',
+    'Gloves',
+    'Helmets',
+    'Shields',
   ];
 
   readonly oneHandWeapons = [
@@ -140,15 +140,20 @@ export class ItemService {
   constructor(private readonly http: HttpClient) {}
 
   getItems() {
+    const sockets = [...this.sockets].reverse();
     return this.http.get<{ [key: string]: any }[]>('assets/items.json').pipe(
       map((items) =>
         items
           .map((item) => {
             const i = item['title'];
+            const dropLevel = +i['drop level'];
+            let maxSockets = (
+              sockets.find((s) => s.minLevel <= dropLevel) as ItemSocket
+            ).number;
             const result: Item = {
               name: i['name'],
               class: i['class'],
-              dropLevel: +i['drop level'],
+              dropLevel,
               requiredLevel: +i['required level'],
               width: +i['size x'],
               height: +i['size y'],
@@ -156,6 +161,7 @@ export class ItemService {
               requiredDexterity: +i['required dexterity'],
               requiredIntelligence: +i['required intelligence'],
               html: he.decode(i['html']),
+              maxSockets,
             };
             return result;
           })

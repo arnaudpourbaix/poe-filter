@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormArray, FormBuilder, FormControl } from '@angular/forms';
 import { Params } from '@angular/router';
-import { debounceTime, map, switchMap } from 'rxjs';
+import { TypedFormGroup } from 'ngx-forms-typed';
+import { debounceTime, map, startWith, switchMap } from 'rxjs';
 import { BindQueryParamOptions } from 'src/app/directives/bind-query-param/bind-query-param.model';
 import { ItemService } from 'src/app/services/item.service';
+import { Item } from '../../models/item';
+import { ItemView } from '../../models/section-model';
 
 interface Form {
   name: string;
   class: string;
-  str: boolean;
-  dex: boolean;
-  int: boolean;
-  strDex: boolean;
-  strInt: boolean;
-  dexInt: boolean;
+  armourTypes: boolean[];
+  sortProperty: string;
 }
 
 @Component({
@@ -22,6 +21,8 @@ interface Form {
   styleUrls: ['./item-search.component.scss'],
 })
 export class ItemSearchComponent {
+  armourTypes = this.itemService.armourTypes;
+
   classes$ = this.itemService.getItems().pipe(
     map((items) => {
       const classes = items.reduce((acc, item) => {
@@ -34,16 +35,16 @@ export class ItemSearchComponent {
     })
   );
 
+  sortProperties = ['name', 'requiredLevel'];
+
   form = this.fb.group({
     name: [''],
     class: [''],
-    str: [true],
-    dex: [true],
-    int: [true],
-    strDex: [true],
-    strInt: [true],
-    dexInt: [true],
-  });
+    armourTypes: new FormArray(
+      this.armourTypes.map(() => new FormControl(false))
+    ),
+    sortProperty: [this.sortProperties[0]],
+  }) as TypedFormGroup<Form>;
 
   bindOptions: Partial<BindQueryParamOptions<Form>> = {
     formToQuery: true,
@@ -52,38 +53,30 @@ export class ItemSearchComponent {
       return {
         name: params['name'],
         class: params['class'],
-        str: params['str'] === 'true',
-        dex: params['dex'] === 'true',
-        int: params['int'] === 'true',
-        strDex: params['strDex'] === 'true',
-        strInt: params['strInt'] === 'true',
-        dexInt: params['dexInt'] === 'true',
+        armourTypes: this.queryParamsToForm(
+          params['armourTypes'],
+          this.form.controls.armourTypes.value.length
+        ),
       };
     },
     queryParamsMapper: (form) => ({
       name: form.name,
       class: form.class,
-      str: form.str,
-      dex: form.dex,
-      int: form.int,
-      strDex: form.strDex,
-      strInt: form.strInt,
-      dexInt: form.dexInt,
+      armourTypes: this.formToQueryParams(form.armourTypes ?? []),
     }),
   };
 
   items$ = this.form.valueChanges.pipe(
     debounceTime(200),
+    startWith({}),
     switchMap(() => this.itemService.getItems()),
     map((items) => {
       const name = this.form.controls['name'].value;
       const clazz = this.form.controls['class'].value;
-      const str = this.form.controls['str'].value;
-      const dex = this.form.controls['dex'].value;
-      const int = this.form.controls['int'].value;
-      const strDex = this.form.controls['strDex'].value;
-      const strInt = this.form.controls['strInt'].value;
-      const dexInt = this.form.controls['dexInt'].value;
+      const armourTypes = this.getSelection(
+        this.form.value.armourTypes,
+        this.armourTypes
+      );
       const results = items
         .filter((item) => {
           const isArmour = [
@@ -97,32 +90,32 @@ export class ItemSearchComponent {
             !name || item.name.toLowerCase().toLowerCase().indexOf(name) !== -1;
           const matchClass = !clazz || clazz === item.class;
           const matchStr =
-            str &&
+            armourTypes.includes('str') &&
             item.requiredStrength &&
             !item.requiredDexterity &&
             !item.requiredIntelligence;
           const matchDex =
-            dex &&
+            armourTypes.includes('dex') &&
             !item.requiredStrength &&
             item.requiredDexterity &&
             !item.requiredIntelligence;
           const matchInt =
-            int &&
+            armourTypes.includes('int') &&
             !item.requiredStrength &&
             !item.requiredDexterity &&
             item.requiredIntelligence;
           const matchStrDex =
-            strDex &&
+            armourTypes.includes('strDex') &&
             item.requiredStrength &&
             item.requiredDexterity &&
             !item.requiredIntelligence;
           const matchStrInt =
-            strInt &&
+            armourTypes.includes('strInt') &&
             item.requiredStrength &&
             !item.requiredDexterity &&
             item.requiredIntelligence;
           const matchDexInt =
-            dexInt &&
+            armourTypes.includes('dexInt') &&
             !item.requiredStrength &&
             item.requiredDexterity &&
             item.requiredIntelligence;
@@ -136,8 +129,11 @@ export class ItemSearchComponent {
             matchDexInt;
           return matchName && matchClass && matchArmour;
         })
-        //.sort((a, b) => a.dropLevel - b.dropLevel);
-        .sort(this.sortBy((a) => a.name));
+        .sort(
+          this.sortBy(
+            (a) => a[this.form.controls.sortProperty.value as keyof Item]
+          )
+        );
       console.log(results);
       return results;
     })
@@ -155,5 +151,35 @@ export class ItemSearchComponent {
       typeof key === 'string' ? val[key] : key(val);
     return (a: T, b: T) =>
       getValue(a) > getValue(b) ? 1 : getValue(b) > getValue(a) ? -1 : 0;
+  }
+
+  private queryParamsToForm(value: string, arrLength: number) {
+    const values = value
+      .split(',')
+      .filter((v) => v.length)
+      .map((v) => +v);
+    const results = [];
+    for (let i = 0; i < arrLength; i++) {
+      results.push(values.includes(i));
+    }
+    return results;
+  }
+
+  private formToQueryParams(values: boolean[]) {
+    const results = values
+      .reduce((acc, v, i) => {
+        if (v) acc.push(i);
+        return acc;
+      }, [] as number[])
+      .join(',');
+    return results;
+  }
+
+  private getSelection(selection: boolean[], items: ItemView[]) {
+    return selection.reduce(
+      (acc: string[], checked: boolean, i: number) =>
+        checked ? [...acc, items[i].value] : acc,
+      []
+    );
   }
 }

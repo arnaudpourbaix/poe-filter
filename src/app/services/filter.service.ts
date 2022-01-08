@@ -5,6 +5,7 @@ import {
   GenerateArmourConfig,
   GenerateConfig,
   GenerateFlaskConfig,
+  GenerateItemConfig,
   GenerateWeaponConfig,
 } from '../models/generate-config';
 import { Item } from '../models/item';
@@ -27,8 +28,12 @@ export class FilterService {
     ]).pipe(
       map(([items, template]) => {
         const script = [] as string[];
-        this.generateChromatics(config.chromatics, script);
-        this.generateQualityRecipes(config.minQualityRecipe, script);
+        this.generateChromatics(config.chromaticSizes, script);
+        this.generateQualityFlaskAndGem(
+          config.minQualityFlask,
+          config.minQualityGem,
+          script
+        );
         this.generateFlasks(config.flasks, items, script);
         this.generateWeapons(config.oneHandWeapons, items, script);
         this.generateWeapons(config.twoHandWeapons, items, script);
@@ -40,13 +45,22 @@ export class FilterService {
         this.generateBaseTypes(config.belts, script);
         this.generateBaseTypes(config.amulets, script);
         this.generateBaseTypes(config.rings, script);
+        this.generateBlock(
+          true,
+          [`Class "Amulet"`, `BaseType Talisman`],
+          script
+        );
+        this.generateRares(config.rareSizes, script);
         return template.replace('{{INSERT}}', script.join('\r\n'));
-        // return script.join('\r\n');
       })
     );
   }
 
-  private generateQualityRecipes(quality: number, script: string[]) {
+  private generateQualityFlaskAndGem(
+    flaskQuality: number,
+    gemQuality: number,
+    script: string[]
+  ) {
     const bestQuality = [
       'SetFontSize 45',
       'SetTextColor 255 255 255 255',
@@ -61,11 +75,19 @@ export class FilterService {
       'SetBackgroundColor 130 110 110 255',
     ];
     [...this.itemService.qualities].reverse().forEach((q) => {
-      if (q >= quality) {
+      if (q >= flaskQuality) {
         const params = q === 20 ? bestQuality : lesserQuality;
         this.generateBlock(
           true,
           ['Class "Flask"', `Quality >= ${q}`, ...params],
+          script
+        );
+      }
+      if (q >= gemQuality) {
+        const params = q === 20 ? bestQuality : lesserQuality;
+        this.generateBlock(
+          true,
+          ['Class "Gems"', `Quality >= ${q}`, ...params],
           script
         );
       }
@@ -74,29 +96,38 @@ export class FilterService {
 
   private generateChromatics(sizes: string[], script: string[]) {
     this.itemService.sizes.forEach((size) => {
-      const magic = [
+      const common = [
         `Width ${size.value.substring(0, 1)}`,
         `Height ${size.value.substring(2, 3)}`,
-        'Rarity Rare',
         'SocketGroup "RGB"',
         'SetFontSize 40',
-        'SetTextColor 0 0 0 255',
-        'SetBorderColor 255 255 119',
-        'SetBackgroundColor 130 110 110 255',
       ];
+      const magic = ['Rarity Rare', 'SetBackgroundColor 75 75 70 120'];
       const rare = [
-        `Width ${size.value.substring(0, 1)}`,
-        `Height ${size.value.substring(2, 3)}`,
         'Rarity <= Magic',
-        'SocketGroup "RGB"',
-        'SetFontSize 40',
         'SetTextColor 0 0 0 255',
         'SetBorderColor 0 0 0 255',
         'SetBackgroundColor 130 110 110 255',
       ];
       const cont = sizes.includes(size.value) ? '' : 'Continue';
-      this.generateBlock(true, [...magic, cont], script);
-      this.generateBlock(true, [...rare, cont], script);
+      this.generateBlock(true, [...common, ...magic, cont], script);
+      this.generateBlock(true, [...common, ...rare, cont], script);
+    });
+  }
+
+  private generateRares(sizes: string[], script: string[]) {
+    this.itemService.sizes.forEach((size) => {
+      if (sizes.includes(size.value)) {
+        this.generateBlock(
+          true,
+          [
+            'Rarity Rare',
+            `Width ${size.value.substring(0, 1)}`,
+            `Height ${size.value.substring(2, 3)}`,
+          ],
+          script
+        );
+      }
     });
   }
 
@@ -110,33 +141,7 @@ export class FilterService {
     }
     config.classes.forEach((c) => {
       const weapons = items.filter((i) => i.class === c);
-      if (config.minLinksHighlight) {
-      }
-
-      weapons.forEach((w, i) => {
-        const nextWeapon = weapons[i + 1] as Item;
-        // this.generateBlock(
-        //   true,
-        //   [
-        //     `Class "${c}"`,
-        //     `BaseType "${w.name}"`,
-        //     w.dropLevel < 60 ? `AreaLevel < ${nextWeapon.dropLevel}` : '',
-        //     'Continue',
-        //   ],
-        //   script
-        // );
-        this.generateBlock(
-          true,
-          [
-            `Class "${c}"`,
-            `BaseType "${w.name}"`,
-            w.dropLevel < 60 ? `AreaLevel < ${nextWeapon.dropLevel}` : '',
-            `Sockets >= ${config.minSockets}`,
-            config.minLinks ? `LinkedSockets >= ${config.minLinks}` : '',
-          ],
-          script
-        );
-      });
+      this.generateItemsByDropLevel(config, weapons, script);
     });
   }
 
@@ -152,20 +157,53 @@ export class FilterService {
         armourType,
         armourClass
       );
-      armours.forEach((a, i) => {
-        const nextArmour = armours[i + 1] as Item;
+      this.generateItemsByDropLevel(config, armours, script);
+    });
+  }
+
+  private generateItemsByDropLevel(
+    config: GenerateItemConfig,
+    items: Item[],
+    script: string[]
+  ) {
+    items.forEach((item, i) => {
+      const nextWeapon = items[i + 1] as Item;
+      if (item.dropLevel < 60) {
+        this.generateBlock(
+          false,
+          [`BaseType "${item.name}"`, `AreaLevel >= ${nextWeapon.dropLevel}`],
+          script
+        );
+      }
+      if (
+        config.minSockets !== config.sockets ||
+        config.minLinks !== config.links
+      ) {
         this.generateBlock(
           true,
           [
-            `Class "${armourClass}"`,
-            `BaseType "${a.name}"`,
-            a.dropLevel < 60 ? `AreaLevel < ${nextArmour.dropLevel}` : '',
-            `Sockets >= ${config.minSockets}`,
-            config.minLinks ? `LinkedSockets >= ${config.minLinks}` : '',
+            `BaseType "${item.name}"`,
+            `Sockets >= ${Math.min(config.sockets, item.maxSockets)}`,
+            `LinkedSockets >= ${Math.min(config.links, item.maxSockets)}`,
+            'SetBorderColor 200 0 0',
+            'SetFontSize 38',
           ],
           script
         );
-      });
+      }
+      this.generateBlock(
+        true,
+        [
+          `BaseType "${item.name}"`,
+          config.minSockets > 1
+            ? `Sockets >= ${Math.min(config.minSockets, item.maxSockets)}`
+            : '',
+          config.minLinks
+            ? `LinkedSockets >= ${Math.min(config.minLinks, item.maxSockets)}`
+            : '',
+        ],
+        script
+      );
     });
   }
 

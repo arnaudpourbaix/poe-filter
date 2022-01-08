@@ -9,4 +9,5 @@ export interface Item {
   requiredDexterity: number;
   requiredIntelligence: number;
   html: string;
+  maxSockets: number;
 }
