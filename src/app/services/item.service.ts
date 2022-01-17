@@ -165,7 +165,10 @@ export class ItemService {
             };
             return result;
           })
-          .filter((i) => !['Breach Ring'].includes(i.name))
+          .filter(
+            (i) =>
+              !['Breach Ring', "Kaom's Plate", 'Golden Blade'].includes(i.name)
+          )
           .sort((a, b) => a.requiredLevel - b.requiredLevel)
       )
     );

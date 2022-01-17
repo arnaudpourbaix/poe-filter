@@ -1,7 +1,7 @@
 <section [formGroup]="form">
   <h1>{{ title }}</h1>
   <div fxLayout="column" fxLayoutGap="10px">
-    <div fxLayout="row" fxLayoutGap="10px">
+    <div fxLayout="row wrap" fxLayoutGap="10px">
       <div formArrayName="selection" *ngFor="let item of items; index as i">
         <mat-checkbox formControlName="{{ i }}">
           {{ item.label }}
@@ -41,6 +41,12 @@
           }}</mat-option>
         </mat-select>
       </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <div>Rarity</div>
+      <mat-checkbox formControlName="normal"> Normal </mat-checkbox>
+      <mat-checkbox formControlName="magic"> Magic </mat-checkbox>
+      <mat-checkbox formControlName="rare"> Rare </mat-checkbox>
     </div>
   </div>
 </section>

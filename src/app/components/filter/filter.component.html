@@ -45,38 +45,26 @@
     title="Flasks"
     [items]="flasks"
     [form]="flasksForm"
-    [config]="flaskConfig"
+    [config]="noSocketConfig"
   ></app-filter-section>
-  <section>
-    <h1>Belts</h1>
-    <div fxLayout="row wrap" fxLayoutGap="10px">
-      <div *ngFor="let belt of belts; index as i" formArrayName="belts">
-        <mat-checkbox formControlName="{{ i }}">
-          {{ belt.value }}
-        </mat-checkbox>
-      </div>
-    </div>
-  </section>
-  <section>
-    <h1>Amulets</h1>
-    <div fxLayout="row wrap" fxLayoutGap="10px">
-      <div *ngFor="let amulet of amulets; index as i" formArrayName="amulets">
-        <mat-checkbox formControlName="{{ i }}">
-          {{ amulet.value }}
-        </mat-checkbox>
-      </div>
-    </div>
-  </section>
-  <section>
-    <h1>Rings</h1>
-    <div fxLayout="row wrap" fxLayoutGap="10px">
-      <div *ngFor="let ring of rings; index as i" formArrayName="rings">
-        <mat-checkbox formControlName="{{ i }}">
-          {{ ring.value }}
-        </mat-checkbox>
-      </div>
-    </div>
-  </section>
+  <app-filter-section
+    title="Belts"
+    [items]="belts"
+    [form]="beltsForm"
+    [config]="noSocketConfig"
+  ></app-filter-section>
+  <app-filter-section
+    title="Amulets"
+    [items]="amulets"
+    [form]="amuletsForm"
+    [config]="noSocketConfig"
+  ></app-filter-section>
+  <app-filter-section
+    title="Rings"
+    [items]="rings"
+    [form]="ringsForm"
+    [config]="noSocketConfig"
+  ></app-filter-section>
   <section>
     <h1>Currency recipes</h1>
     <div fxLayout="column" fxLayoutGap="10px">

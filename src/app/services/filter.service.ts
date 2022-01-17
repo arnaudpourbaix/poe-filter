@@ -2,11 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { forkJoin, map } from 'rxjs';
 import {
-  GenerateArmourConfig,
   GenerateConfig,
-  GenerateFlaskConfig,
   GenerateItemConfig,
-  GenerateWeaponConfig,
+  GenerateSocketItemConfig,
 } from '../models/generate-config';
 import { Item } from '../models/item';
 import { ItemService } from './item.service';
@@ -132,14 +130,14 @@ export class FilterService {
   }
 
   private generateWeapons(
-    config: GenerateWeaponConfig,
+    config: GenerateSocketItemConfig,
     items: Item[],
     script: string[]
   ) {
-    if (config.classes.includes('Bows')) {
+    if (config.names.includes('Bows')) {
       this.generateBlock(true, [`Class "Quivers"`], script);
     }
-    config.classes.forEach((c) => {
+    config.names.forEach((c) => {
       const weapons = items.filter((i) => i.class === c);
       this.generateItemsByDropLevel(config, weapons, script);
     });
@@ -147,11 +145,11 @@ export class FilterService {
 
   private generateArmours(
     armourClass: string,
-    config: GenerateArmourConfig,
+    config: GenerateSocketItemConfig,
     items: Item[],
     script: string[]
   ) {
-    config.types.forEach((armourType) => {
+    config.names.forEach((armourType) => {
       const armours = this.itemService.filterItemsByArmourTypeAndClass(
         items,
         armourType,
@@ -162,71 +160,72 @@ export class FilterService {
   }
 
   private generateItemsByDropLevel(
-    config: GenerateItemConfig,
+    config: GenerateSocketItemConfig,
     items: Item[],
     script: string[]
   ) {
-    items.forEach((item, i) => {
-      const nextWeapon = items[i + 1] as Item;
-      if (item.dropLevel < 60) {
-        this.generateBlock(
-          false,
-          [`BaseType "${item.name}"`, `AreaLevel >= ${nextWeapon.dropLevel}`],
-          script
-        );
-      }
-      if (
-        config.minSockets !== config.sockets ||
-        config.minLinks !== config.links
-      ) {
+    items
+      .filter((i) => i.dropLevel < 60)
+      .forEach((item, i) => {
+        const itemPlus1 = items[i + 1] as Item;
+        const itemPlus2 = (items[i + 2] as Item) ?? itemPlus1;
+        if (
+          config.minSockets !== config.sockets ||
+          config.minLinks !== config.links
+        ) {
+          this.generateBlock(
+            true,
+            [
+              `BaseType "${item.name}"`,
+              `ItemLevel < ${itemPlus2.dropLevel}`,
+              this.getRarity(config),
+              `Sockets >= ${Math.min(config.sockets, item.maxSockets)}`,
+              `LinkedSockets >= ${Math.min(config.links, item.maxSockets)}`,
+              'SetBorderColor 200 0 0',
+              'SetFontSize 38',
+            ],
+            script
+          );
+        }
         this.generateBlock(
           true,
           [
             `BaseType "${item.name}"`,
-            `Sockets >= ${Math.min(config.sockets, item.maxSockets)}`,
-            `LinkedSockets >= ${Math.min(config.links, item.maxSockets)}`,
-            'SetBorderColor 200 0 0',
-            'SetFontSize 38',
+            `ItemLevel < ${itemPlus1.dropLevel}`,
+            this.getRarity(config),
+            config.minSockets > 1
+              ? `Sockets >= ${Math.min(config.minSockets, item.maxSockets)}`
+              : '',
+            config.minLinks
+              ? `LinkedSockets >= ${Math.min(config.minLinks, item.maxSockets)}`
+              : '',
           ],
           script
         );
-      }
-      this.generateBlock(
-        true,
-        [
-          `BaseType "${item.name}"`,
-          config.minSockets > 1
-            ? `Sockets >= ${Math.min(config.minSockets, item.maxSockets)}`
-            : '',
-          config.minLinks
-            ? `LinkedSockets >= ${Math.min(config.minLinks, item.maxSockets)}`
-            : '',
-        ],
-        script
-      );
-    });
+      });
   }
 
   private generateFlasks(
-    config: GenerateFlaskConfig,
+    config: GenerateItemConfig,
     items: Item[],
     script: string[]
   ) {
-    config.classes.forEach((c) => {
+    config.names.forEach((c) => {
       if (c === 'Utility Flasks') {
-        this.generateUtilityFlasks(items, script);
+        this.generateUtilityFlasks(config, script);
       } else {
-        this.generateLifeManaFlasks(c, items, script);
+        this.generateLifeManaFlasks(config, c, items, script);
       }
     });
   }
 
-  private generateUtilityFlasks(items: Item[], script: string[]) {
+  private generateUtilityFlasks(config: GenerateItemConfig, script: string[]) {
     this.generateBlock(
       true,
       [
         'Quality 0',
         'Class "Utility Flasks"',
+        this.getRarity(config),
         'SetFontSize 45',
         'SetBorderColor 50 200 125',
         'SetBackgroundColor 25 100 75',
@@ -237,7 +236,12 @@ export class FilterService {
     );
   }
 
-  private generateLifeManaFlasks(c: string, items: Item[], script: string[]) {
+  private generateLifeManaFlasks(
+    config: GenerateItemConfig,
+    c: string,
+    items: Item[],
+    script: string[]
+  ) {
     const flasks = items.filter((i) => i.class === c);
     flasks.forEach((f, i) => {
       const nextFlask = flasks[i + 1] as Item;
@@ -247,20 +251,31 @@ export class FilterService {
           'Quality 0',
           `Class "${c}"`,
           `BaseType "${f.name}`,
-          f.dropLevel < 60 ? `AreaLevel < ${nextFlask.dropLevel}` : '',
+          this.getRarity(config),
+          f.dropLevel < 60 ? `ItemLevel < ${nextFlask.dropLevel}` : '',
         ],
         script
       );
     });
   }
 
-  private generateBaseTypes(classes: string[], script: string[]) {
-    const c = classes.map((cl) => `"${cl}"`).join(' ');
-    this.generateBlock(true, [`BaseType ${c}`], script);
+  private generateBaseTypes(config: GenerateItemConfig, script: string[]) {
+    const c = config.names.map((cl) => `"${cl}"`).join(' ');
+    const rarity = `${config.normal ? 'Normal' : ''} ${
+      config.magic ? 'Magic' : ''
+    } ${config.rare ? 'Rare' : ''}`;
+    this.generateBlock(true, [`BaseType ${c}`, this.getRarity(config)], script);
   }
 
   private generateBlock(show: boolean, lines: string[], script: string[]) {
     script.push(show ? 'Show' : 'Hide');
     lines.filter((l) => !!l).forEach((l) => script.push(`\t${l}`));
+  }
+
+  private getRarity(config: GenerateItemConfig) {
+    const rarity = `${config.normal ? 'Normal' : ''} ${
+      config.magic ? 'Magic' : ''
+    } ${config.rare ? 'Rare' : ''}`;
+    return `Rarity ${rarity}`;
   }
 }

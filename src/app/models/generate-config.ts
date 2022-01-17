@@ -1,34 +1,33 @@
-export interface GenerateFlaskConfig {
-  classes: string[];
+export interface GenerateItemConfig {
+  names: string[];
+  normal: boolean;
+  magic: boolean;
+  rare: boolean;
 }
 
-export interface GenerateItemConfig {
+export interface GenerateSocketItemConfig extends GenerateItemConfig {
+  names: string[];
+  normal: boolean;
+  magic: boolean;
+  rare: boolean;
   minSockets: number;
   minLinks: number;
   sockets: number;
   links: number;
 }
 
-export interface GenerateWeaponConfig extends GenerateItemConfig {
-  classes: string[];
-}
-
-export interface GenerateArmourConfig extends GenerateItemConfig {
-  types: string[];
-}
-
 export interface GenerateConfig {
-  oneHandWeapons: GenerateWeaponConfig;
-  twoHandWeapons: GenerateWeaponConfig;
-  bodyArmours: GenerateArmourConfig;
-  helmets: GenerateArmourConfig;
-  gloves: GenerateArmourConfig;
-  boots: GenerateArmourConfig;
-  shields: GenerateArmourConfig;
-  flasks: GenerateFlaskConfig;
-  belts: string[];
-  rings: string[];
-  amulets: string[];
+  oneHandWeapons: GenerateSocketItemConfig;
+  twoHandWeapons: GenerateSocketItemConfig;
+  bodyArmours: GenerateSocketItemConfig;
+  helmets: GenerateSocketItemConfig;
+  gloves: GenerateSocketItemConfig;
+  boots: GenerateSocketItemConfig;
+  shields: GenerateSocketItemConfig;
+  flasks: GenerateItemConfig;
+  belts: GenerateItemConfig;
+  rings: GenerateItemConfig;
+  amulets: GenerateItemConfig;
   chromaticSizes: string[];
   rareSizes: string[];
   minQualityFlask: number;

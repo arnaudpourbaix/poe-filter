@@ -9,4 +9,7 @@ export interface SectionForm {
   minLinks: number;
   sockets: number;
   links: number;
+  normal: boolean;
+  magic: boolean;
+  rare: boolean;
 }
