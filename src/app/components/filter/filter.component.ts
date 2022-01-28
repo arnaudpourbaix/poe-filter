@@ -61,27 +61,35 @@ export class FilterComponent implements OnInit {
 
   oneHandWeaponsConfig: SectionConfig = {
     sockets: 3,
+    showSecondary: true,
   };
   twoHandWeaponsConfig: SectionConfig = {
     sockets: 6,
+    showSecondary: true,
   };
   bodyArmoursConfig: SectionConfig = {
     sockets: 6,
+    showSecondary: true,
   };
   helmetsConfig: SectionConfig = {
     sockets: 4,
+    showSecondary: true,
   };
   glovesConfig: SectionConfig = {
     sockets: 4,
+    showSecondary: true,
   };
   bootsConfig: SectionConfig = {
     sockets: 4,
+    showSecondary: true,
   };
   shieldsConfig: SectionConfig = {
     sockets: 3,
+    showSecondary: true,
   };
   noSocketConfig: SectionConfig = {
     sockets: 0,
+    showSecondary: false,
   };
 
   script$ = of('');
@@ -91,10 +99,11 @@ export class FilterComponent implements OnInit {
       selection: new FormArray(
         this.oneHandWeapons.map(() => new FormControl(false))
       ),
+      secondarySelection: new FormArray(
+        this.oneHandWeapons.map(() => new FormControl(false))
+      ),
       minSockets: [1],
       minLinks: [0],
-      sockets: [1],
-      links: [0],
       normal: true,
       magic: true,
       rare: true,
@@ -103,10 +112,11 @@ export class FilterComponent implements OnInit {
       selection: new FormArray(
         this.twoHandWeapons.map(() => new FormControl(false))
       ),
+      secondarySelection: new FormArray(
+        this.twoHandWeapons.map(() => new FormControl(false))
+      ),
       minSockets: [1],
       minLinks: [0],
-      sockets: [1],
-      links: [0],
       normal: true,
       magic: true,
       rare: true,
@@ -115,10 +125,11 @@ export class FilterComponent implements OnInit {
       selection: new FormArray(
         this.armourTypes.map(() => new FormControl(false))
       ),
-      minSockets: [3],
+      secondarySelection: new FormArray(
+        this.armourTypes.map(() => new FormControl(false))
+      ),
+      minSockets: [1],
       minLinks: [0],
-      sockets: [6],
-      links: [6],
       normal: true,
       magic: true,
       rare: true,
@@ -127,10 +138,11 @@ export class FilterComponent implements OnInit {
       selection: new FormArray(
         this.armourTypes.map(() => new FormControl(false))
       ),
+      secondarySelection: new FormArray(
+        this.armourTypes.map(() => new FormControl(false))
+      ),
       minSockets: [1],
       minLinks: [0],
-      sockets: [1],
-      links: [0],
       normal: true,
       magic: true,
       rare: true,
@@ -139,10 +151,11 @@ export class FilterComponent implements OnInit {
       selection: new FormArray(
         this.armourTypes.map(() => new FormControl(false))
       ),
+      secondarySelection: new FormArray(
+        this.armourTypes.map(() => new FormControl(false))
+      ),
       minSockets: [1],
       minLinks: [0],
-      sockets: [1],
-      links: [0],
       normal: true,
       magic: true,
       rare: true,
@@ -151,10 +164,11 @@ export class FilterComponent implements OnInit {
       selection: new FormArray(
         this.armourTypes.map(() => new FormControl(false))
       ),
+      secondarySelection: new FormArray(
+        this.armourTypes.map(() => new FormControl(false))
+      ),
       minSockets: [1],
       minLinks: [0],
-      sockets: [1],
-      links: [0],
       normal: true,
       magic: true,
       rare: true,
@@ -163,10 +177,11 @@ export class FilterComponent implements OnInit {
       selection: new FormArray(
         this.armourTypes.map(() => new FormControl(false))
       ),
+      secondarySelection: new FormArray(
+        this.armourTypes.map(() => new FormControl(false))
+      ),
       minSockets: [1],
       minLinks: [0],
-      sockets: [1],
-      links: [0],
       normal: true,
       magic: true,
       rare: true,
@@ -229,10 +244,12 @@ export class FilterComponent implements OnInit {
             params['a'],
             this.form.controls.oneHandWeapons.value.selection.length
           ),
+          secondarySelection: this.queryParamsToForm(
+            params['ac'],
+            this.form.controls.oneHandWeapons.value.secondarySelection.length
+          ),
           minSockets: +params['aa'],
           minLinks: +params['ab'],
-          sockets: +params['ac'],
-          links: +params['ad'],
           normal: params['ae'] === 'true',
           magic: params['af'] === 'true',
           rare: params['ag'] === 'true',
@@ -242,10 +259,12 @@ export class FilterComponent implements OnInit {
             params['b'],
             this.form.controls.twoHandWeapons.value.selection.length
           ),
+          secondarySelection: this.queryParamsToForm(
+            params['bc'],
+            this.form.controls.twoHandWeapons.value.secondarySelection.length
+          ),
           minSockets: +params['ba'],
           minLinks: +params['bb'],
-          sockets: +params['bc'],
-          links: +params['bd'],
           normal: params['be'] === 'true',
           magic: params['bf'] === 'true',
           rare: params['bg'] === 'true',
@@ -255,10 +274,12 @@ export class FilterComponent implements OnInit {
             params['c'],
             this.form.controls.bodyArmours.value.selection.length
           ),
+          secondarySelection: this.queryParamsToForm(
+            params['cc'],
+            this.form.controls.bodyArmours.value.secondarySelection.length
+          ),
           minSockets: +params['ca'],
           minLinks: +params['cb'],
-          sockets: +params['cc'],
-          links: +params['cd'],
           normal: params['ce'] === 'true',
           magic: params['cf'] === 'true',
           rare: params['cg'] === 'true',
@@ -268,10 +289,12 @@ export class FilterComponent implements OnInit {
             params['d'],
             this.form.controls.helmets.value.selection.length
           ),
+          secondarySelection: this.queryParamsToForm(
+            params['dc'],
+            this.form.controls.helmets.value.secondarySelection.length
+          ),
           minSockets: +params['da'],
           minLinks: +params['db'],
-          sockets: +params['dc'],
-          links: +params['dd'],
           normal: params['de'] === 'true',
           magic: params['df'] === 'true',
           rare: params['dg'] === 'true',
@@ -279,12 +302,14 @@ export class FilterComponent implements OnInit {
         boots: {
           selection: this.queryParamsToForm(
             params['e'],
-            this.form.controls.gloves.value.selection.length
+            this.form.controls.boots.value.selection.length
+          ),
+          secondarySelection: this.queryParamsToForm(
+            params['ec'],
+            this.form.controls.boots.value.secondarySelection.length
           ),
           minSockets: +params['ea'],
           minLinks: +params['eb'],
-          sockets: +params['ec'],
-          links: +params['ed'],
           normal: params['ee'] === 'true',
           magic: params['ef'] === 'true',
           rare: params['eg'] === 'true',
@@ -292,12 +317,14 @@ export class FilterComponent implements OnInit {
         gloves: {
           selection: this.queryParamsToForm(
             params['f'],
-            this.form.controls.boots.value.selection.length
+            this.form.controls.gloves.value.selection.length
+          ),
+          secondarySelection: this.queryParamsToForm(
+            params['fc'],
+            this.form.controls.gloves.value.secondarySelection.length
           ),
           minSockets: +params['fa'],
           minLinks: +params['fb'],
-          sockets: +params['fc'],
-          links: +params['fd'],
           normal: params['fe'] === 'true',
           magic: params['ff'] === 'true',
           rare: params['fg'] === 'true',
@@ -305,12 +332,14 @@ export class FilterComponent implements OnInit {
         shields: {
           selection: this.queryParamsToForm(
             params['g'],
-            this.form.controls.helmets.value.selection.length
+            this.form.controls.shields.value.selection.length
+          ),
+          secondarySelection: this.queryParamsToForm(
+            params['gc'],
+            this.form.controls.shields.value.secondarySelection.length
           ),
           minSockets: +params['ga'],
           minLinks: +params['gb'],
-          sockets: +params['gc'],
-          links: +params['gd'],
           normal: params['ge'] === 'true',
           magic: params['gf'] === 'true',
           rare: params['gg'] === 'true',
@@ -368,56 +397,53 @@ export class FilterComponent implements OnInit {
         a: this.formToQueryParams(form.oneHandWeapons?.selection ?? []),
         aa: form.oneHandWeapons?.minSockets,
         ab: form.oneHandWeapons?.minLinks,
-        ac: form.oneHandWeapons?.sockets,
-        ad: form.oneHandWeapons?.links,
+        ac: this.formToQueryParams(
+          form.oneHandWeapons?.secondarySelection ?? []
+        ),
         ae: form.oneHandWeapons?.normal,
         af: form.oneHandWeapons?.magic,
         ag: form.oneHandWeapons?.rare,
         b: this.formToQueryParams(form.twoHandWeapons?.selection ?? []),
         ba: form.twoHandWeapons?.minSockets,
         bb: form.twoHandWeapons?.minLinks,
-        bc: form.twoHandWeapons?.sockets,
-        bd: form.twoHandWeapons?.links,
+        bc: this.formToQueryParams(
+          form.twoHandWeapons?.secondarySelection ?? []
+        ),
         be: form.twoHandWeapons?.normal,
         bf: form.twoHandWeapons?.magic,
         bg: form.twoHandWeapons?.rare,
         c: this.formToQueryParams(form.bodyArmours?.selection ?? []),
         ca: form.bodyArmours?.minSockets,
         cb: form.bodyArmours?.minLinks,
-        cc: form.bodyArmours?.sockets,
-        cd: form.bodyArmours?.links,
+        cc: this.formToQueryParams(form.bodyArmours?.secondarySelection ?? []),
         ce: form.bodyArmours?.normal,
         cf: form.bodyArmours?.magic,
         cg: form.bodyArmours?.rare,
         d: this.formToQueryParams(form.helmets?.selection ?? []),
         da: form.helmets?.minSockets,
         db: form.helmets?.minLinks,
-        dc: form.helmets?.sockets,
-        dd: form.helmets?.links,
+        dc: this.formToQueryParams(form.helmets?.secondarySelection ?? []),
         de: form.helmets?.normal,
         df: form.helmets?.magic,
         dg: form.helmets?.rare,
         e: this.formToQueryParams(form.boots?.selection ?? []),
         ea: form.boots?.minSockets,
         eb: form.boots?.minLinks,
-        ec: form.boots?.sockets,
-        ed: form.boots?.links,
+        ec: this.formToQueryParams(form.boots?.secondarySelection ?? []),
         ee: form.boots?.normal,
         ef: form.boots?.magic,
         eg: form.boots?.rare,
         f: this.formToQueryParams(form.gloves?.selection ?? []),
         fa: form.gloves?.minSockets,
         fb: form.gloves?.minLinks,
-        fc: form.gloves?.sockets,
-        fd: form.gloves?.links,
+        fc: this.formToQueryParams(form.gloves?.secondarySelection ?? []),
         fe: form.gloves?.normal,
         ff: form.gloves?.magic,
         fg: form.gloves?.rare,
         g: this.formToQueryParams(form.shields?.selection ?? []),
         ga: form.shields?.minSockets,
         gb: form.shields?.minLinks,
-        gc: form.shields?.sockets,
-        gd: form.shields?.links,
+        gc: this.formToQueryParams(form.shields?.secondarySelection ?? []),
         ge: form.shields?.normal,
         gf: form.shields?.magic,
         gg: form.shields?.rare,
@@ -492,44 +518,77 @@ export class FilterComponent implements OnInit {
     this.script$ = this.filterService
       .generate({
         oneHandWeapons: {
-          names: this.getSelection(
+          list: this.getSelection(
             form.oneHandWeapons.selection,
             this.oneHandWeapons
           ),
+          secondaryList: this.getSelection(
+            form.oneHandWeapons.secondarySelection,
+            this.oneHandWeapons
+          ),
           ...form.oneHandWeapons,
+          maxSockets: 3,
         },
         twoHandWeapons: {
-          names: this.getSelection(
+          list: this.getSelection(
             form.twoHandWeapons.selection,
             this.twoHandWeapons
           ),
+          secondaryList: this.getSelection(
+            form.twoHandWeapons.secondarySelection,
+            this.twoHandWeapons
+          ),
           ...form.twoHandWeapons,
+          maxSockets: 6,
         },
         bodyArmours: {
-          names: this.getSelection(
-            form.bodyArmours.selection,
+          list: this.getSelection(form.bodyArmours.selection, this.armourTypes),
+          secondaryList: this.getSelection(
+            form.bodyArmours.secondarySelection,
             this.armourTypes
           ),
           ...form.bodyArmours,
+          maxSockets: 6,
         },
         helmets: {
-          names: this.getSelection(form.helmets.selection, this.armourTypes),
+          list: this.getSelection(form.helmets.selection, this.armourTypes),
+          secondaryList: this.getSelection(
+            form.helmets.secondarySelection,
+            this.armourTypes
+          ),
           ...form.helmets,
+          maxSockets: 4,
         },
         boots: {
-          names: this.getSelection(form.boots.selection, this.armourTypes),
+          list: this.getSelection(form.boots.selection, this.armourTypes),
+          secondaryList: this.getSelection(
+            form.boots.secondarySelection,
+            this.armourTypes
+          ),
           ...form.boots,
+          maxSockets: 4,
         },
         gloves: {
-          names: this.getSelection(form.gloves.selection, this.armourTypes),
+          list: this.getSelection(form.gloves.selection, this.armourTypes),
+          secondaryList: this.getSelection(
+            form.gloves.secondarySelection,
+            this.armourTypes
+          ),
           ...form.gloves,
+          maxSockets: 4,
         },
         shields: {
-          names: this.getSelection(form.shields.selection, this.armourTypes),
+          list: this.getSelection(form.shields.selection, this.armourTypes),
+          secondaryList: this.getSelection(
+            form.shields.secondarySelection,
+            this.armourTypes
+          ),
           ...form.shields,
+          maxSockets: 4,
         },
         flasks: {
-          names: this.getSelection(form.flasks.selection, this.flasks),
+          list: this.getSelection(form.flasks.selection, this.flasks),
+          secondaryList: [],
           ...form.flasks,
         },
         chromaticSizes: this.getSelection(
@@ -540,15 +599,18 @@ export class FilterComponent implements OnInit {
         minQualityFlask: form.qFlasks,
         minQualityGem: form.qGems,
         belts: {
-          names: this.getSelection(form.belts.selection, this.belts),
+          list: this.getSelection(form.belts.selection, this.belts),
+          secondaryList: [],
           ...form.belts,
         },
         amulets: {
-          names: this.getSelection(form.amulets.selection, this.amulets),
+          list: this.getSelection(form.amulets.selection, this.amulets),
+          secondaryList: [],
           ...form.amulets,
         },
         rings: {
-          names: this.getSelection(form.rings.selection, this.rings),
+          list: this.getSelection(form.rings.selection, this.rings),
+          secondaryList: [],
           ...form.rings,
         },
       })

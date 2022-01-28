@@ -10,4 +10,6 @@ export interface Item {
   requiredIntelligence: number;
   html: string;
   maxSockets: number;
+  isDropRestricted: boolean;
+  isDropEnabled: boolean;
 }

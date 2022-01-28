@@ -81,49 +81,37 @@ export class ItemService {
     'Chain Belt',
     'Cloth Belt',
     'Crystal Belt',
-    'Golden Obi',
     'Heavy Belt',
     'Leather Belt',
-    'Mechalarm Belt',
-    'Micro-Distillery Belt',
     'Rustic Sash',
     'Studded Belt',
-    'Stygian Vise',
     'Vanguard Belt',
   ];
 
   readonly amulets = [
     'Agate Amulet',
     'Amber Amulet',
-    'Astrolabe Amulet',
     'Blue Pearl Amulet',
     'Citrine Amulet',
     'Coral Amulet',
     'Gold Amulet',
     'Jade Amulet',
-    'Jet Amulet',
     'Lapis Amulet',
     'Marble Amulet',
     'Onyx Amulet',
     'Paua Amulet',
-    'Ruby Amulet',
     'Seaglass Amulet',
-    'Simplex Amulet',
     'Turquoise Amulet',
   ];
 
   readonly rings = [
     'Amethyst Ring',
     'Cerulean Ring',
-    'Cogwork Ring',
     'Coral Ring',
     'Diamond Ring',
-    'Geodesic Ring',
     'Gold Ring',
-    'Golden Hoop',
     'Iolite Ring',
     'Iron Ring',
-    'Jet Ring',
     'Moonstone Ring',
     'Opal Ring',
     'Paua Ring',
@@ -162,13 +150,12 @@ export class ItemService {
               requiredIntelligence: +i['required intelligence'],
               html: he.decode(i['html']),
               maxSockets,
+              isDropRestricted: i['is drop restricted'] === '1',
+              isDropEnabled: i['drop enabled'] === '1',
             };
             return result;
           })
-          .filter(
-            (i) =>
-              !['Breach Ring', "Kaom's Plate", 'Golden Blade'].includes(i.name)
-          )
+          .filter((i) => !i.isDropRestricted && i.isDropEnabled)
           .sort((a, b) => a.requiredLevel - b.requiredLevel)
       )
     );

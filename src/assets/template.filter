@@ -7018,6 +7018,10 @@ Show # $type->questlike $tier->questwatchstones
 
 {{INSERT}}
 
+Hide 
+	SocketGroup "RGB"
+	SetFontSize 22
+
 # !! Override 960 : "don't override anything"
 #------------------------------------
 # [6002] Hide All known Section

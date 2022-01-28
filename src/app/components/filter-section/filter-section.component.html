@@ -8,6 +8,17 @@
         </mat-checkbox>
       </div>
     </div>
+    <div fxLayout="row wrap" fxLayoutGap="10px" *ngIf="config.showSecondary">
+      <div>Secondary choices:</div>
+      <div
+        formArrayName="secondarySelection"
+        *ngFor="let item of items; index as i"
+      >
+        <mat-checkbox formControlName="{{ i }}">
+          {{ item.label }}
+        </mat-checkbox>
+      </div>
+    </div>
     <div fxLayout="row" fxLayoutGap="10px" *ngIf="config.sockets > 0">
       <mat-form-field appearance="fill">
         <mat-label>Minimum sockets</mat-label>
@@ -20,22 +31,6 @@
       <mat-form-field appearance="fill">
         <mat-label>Minimum links</mat-label>
         <mat-select formControlName="minLinks">
-          <mat-option *ngFor="let link of links" [value]="link">{{
-            link
-          }}</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="fill" class="wanted">
-        <mat-label>Wanted sockets</mat-label>
-        <mat-select formControlName="sockets">
-          <mat-option *ngFor="let socket of sockets" [value]="socket.number">{{
-            socket.number
-          }}</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="fill">
-        <mat-label>Wanted links</mat-label>
-        <mat-select formControlName="links">
           <mat-option *ngFor="let link of links" [value]="link">{{
             link
           }}</mat-option>

@@ -1,19 +1,19 @@
 export interface GenerateItemConfig {
-  names: string[];
+  list: string[];
+  secondaryList: string[];
   normal: boolean;
   magic: boolean;
   rare: boolean;
 }
 
 export interface GenerateSocketItemConfig extends GenerateItemConfig {
-  names: string[];
+  list: string[];
   normal: boolean;
   magic: boolean;
   rare: boolean;
   minSockets: number;
   minLinks: number;
-  sockets: number;
-  links: number;
+  maxSockets: number;
 }
 
 export interface GenerateConfig {

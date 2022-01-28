@@ -39,8 +39,8 @@ export class FilterSectionComponent implements OnInit, OnDestroy {
       .pipe(
         takeUntil(this.destroy$),
         tap((value) => {
-          if (value > this.form.controls.sockets.value) {
-            this.form.controls.sockets.setValue(value);
+          if (value < this.form.controls.minLinks.value) {
+            this.form.controls.minLinks.setValue(value === 1 ? 0 : value);
           }
         })
       )
@@ -49,8 +49,8 @@ export class FilterSectionComponent implements OnInit, OnDestroy {
       .pipe(
         takeUntil(this.destroy$),
         tap((value) => {
-          if (value > this.form.controls.links.value) {
-            this.form.controls.links.setValue(value);
+          if (value > this.form.controls.minSockets.value) {
+            this.form.controls.minSockets.setValue(value);
           }
         })
       )
