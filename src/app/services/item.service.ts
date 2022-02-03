@@ -128,16 +128,13 @@ export class ItemService {
   constructor(private readonly http: HttpClient) {}
 
   getItems() {
-    const sockets = [...this.sockets].reverse();
     return this.http.get<{ [key: string]: any }[]>('assets/items.json').pipe(
       map((items) =>
         items
           .map((item) => {
             const i = item['title'];
             const dropLevel = +i['drop level'];
-            let maxSockets = (
-              sockets.find((s) => s.minLevel <= dropLevel) as ItemSocket
-            ).number;
+            let maxSockets = this.getMaxSockets(dropLevel, i['class']);
             const result: Item = {
               name: i['name'],
               class: i['class'],
@@ -159,6 +156,25 @@ export class ItemService {
           .sort((a, b) => a.requiredLevel - b.requiredLevel)
       )
     );
+  }
+
+  getMaxSockets(dropLevel: number, itemClass: string) {
+    const sockets = [...this.sockets].reverse();
+    let maxSocketByLevel = (
+      sockets.find((s) => s.minLevel <= dropLevel) as ItemSocket
+    ).number;
+    let maxSocketItem = 0;
+    if ([...this.oneHandWeapons, 'Shields'].includes(itemClass)) {
+      maxSocketItem = 3;
+    } else if (
+      this.twoHandWeapons.includes(itemClass) ||
+      itemClass === 'Body Armours'
+    ) {
+      maxSocketItem = 6;
+    } else if (['Boots', 'Gloves', 'Helmets'].includes(itemClass)) {
+      maxSocketItem = 4;
+    }
+    return Math.min(maxSocketByLevel, maxSocketItem);
   }
 
   filterItemsByArmourTypeAndClass(
