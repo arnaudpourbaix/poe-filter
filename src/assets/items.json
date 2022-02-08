@@ -14432,5 +14432,481 @@
       "is drop restricted": "0",
       "drop enabled": "1"
     }
+  },
+  {
+    "title": {
+      "name": "Driftwood Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "1",
+      "required level": "1",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "8",
+      "required dexterity": "0",
+      "required intelligence": "8",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Driftwood Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;5-8&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.55&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;10% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Darkwood Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "5",
+      "required level": "5",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "14",
+      "required dexterity": "0",
+      "required intelligence": "14",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Darkwood Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;8-12&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.50&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;5&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;12% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Bronze Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "10",
+      "required level": "10",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "22",
+      "required dexterity": "0",
+      "required intelligence": "22",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Bronze Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;10-19&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;10&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;22&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;22&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;12% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Quartz Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "15",
+      "required level": "15",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "25",
+      "required dexterity": "0",
+      "required intelligence": "35",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Quartz Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;14-22&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.50%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;15&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;25&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;35&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;20% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Iron Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "20",
+      "required level": "20",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "38",
+      "required dexterity": "0",
+      "required intelligence": "38",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Iron Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;18-27&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;20&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;38&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;38&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;14% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Ochre Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "24",
+      "required level": "24",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "44",
+      "required dexterity": "0",
+      "required intelligence": "44",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Ochre Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;17-31&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.45&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;24&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;44&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;44&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;16% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Ritual Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "28",
+      "required level": "28",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "51",
+      "required dexterity": "0",
+      "required intelligence": "51",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Ritual Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;21-50&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.20&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;28&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;51&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;51&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;16% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Oscillating Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "30",
+      "required level": "30",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "44",
+      "required dexterity": "0",
+      "required intelligence": "64",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Oscillating Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;23-34&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.30%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.45&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;30&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;44&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;64&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;Elemental Overload&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "1",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Shadow Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "32",
+      "required level": "32",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "52",
+      "required dexterity": "0",
+      "required intelligence": "62",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Shadow Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;29-44&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.20%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.25&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;32&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;52&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;62&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;22% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Grinning Fetish",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "35",
+      "required level": "35",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "62",
+      "required dexterity": "0",
+      "required intelligence": "62",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Grinning Fetish&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;24-36&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.50&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;35&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;62&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;62&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;18% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Horned Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "36",
+      "required level": "36",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "66",
+      "required dexterity": "0",
+      "required intelligence": "66",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Horned Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;27-50&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.30&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;36&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;66&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;66&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;Damage Penetrates 4% [[Elemental Resistance|Elemental Resistances]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Sekhem",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "38",
+      "required level": "38",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "67",
+      "required dexterity": "0",
+      "required intelligence": "67",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Sekhem&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;30-55&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.25&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;38&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;67&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;67&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;18% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Crystal Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "41",
+      "required level": "41",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "59",
+      "required dexterity": "0",
+      "required intelligence": "85",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Crystal Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;35-52&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.50%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.25&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;41&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;59&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;85&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;30% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Lead Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "44",
+      "required level": "44",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "77",
+      "required dexterity": "0",
+      "required intelligence": "77",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Lead Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;38-57&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.25&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;44&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;77&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;77&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;22% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Blood Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "47",
+      "required level": "47",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "81",
+      "required dexterity": "0",
+      "required intelligence": "81",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Blood Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;30-55&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;47&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;81&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;81&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;24% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Royal Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "50",
+      "required level": "50",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "86",
+      "required dexterity": "0",
+      "required intelligence": "86",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Royal Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;34-80&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.20&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;50&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;86&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;86&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;24% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Stabilising Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "50",
+      "required level": "50",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "71",
+      "required dexterity": "0",
+      "required intelligence": "102",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Stabilising Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;35-52&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.30%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.45&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;50&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;71&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;102&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;Elemental Equilibrium&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "1",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Abyssal Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "53",
+      "required level": "53",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "83",
+      "required dexterity": "0",
+      "required intelligence": "99",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Abyssal Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;45-67&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.20%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.25&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;53&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;83&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;99&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;30% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Stag Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "55",
+      "required level": "55",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "98",
+      "required dexterity": "0",
+      "required intelligence": "98",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Stag Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;39-72&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.30&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;55&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;98&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;98&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;Damage Penetrates 4% [[Elemental Resistance|Elemental Resistances]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Karui Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "56",
+      "required level": "56",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "96",
+      "required dexterity": "0",
+      "required intelligence": "96",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Karui Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;37-55&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.50&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;56&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;96&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;96&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;26% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Tyrant's Sekhem",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "58",
+      "required level": "58",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "99",
+      "required dexterity": "0",
+      "required intelligence": "99",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Tyrant's Sekhem&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;43-80&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.25&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;58&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;99&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;99&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;26% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Opal Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "60",
+      "required level": "60",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "95",
+      "required dexterity": "0",
+      "required intelligence": "131",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Opal Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;49-73&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.50%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.25&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;60&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;95&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;131&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;40% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Platinum Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "62",
+      "required level": "62",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "113",
+      "required dexterity": "0",
+      "required intelligence": "113",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Platinum Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;51-76&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.25&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;62&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;113&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;113&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;30% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Vaal Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "64",
+      "required level": "64",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "113",
+      "required dexterity": "0",
+      "required intelligence": "113",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Vaal Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;37-70&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;64&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;113&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;113&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;32% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Carnal Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "66",
+      "required level": "66",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "113",
+      "required dexterity": "0",
+      "required intelligence": "113",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Carnal Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;41-95&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.20&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;66&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;113&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;113&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;32% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Void Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "68",
+      "required level": "68",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "104",
+      "required dexterity": "0",
+      "required intelligence": "122",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Void Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;50-76&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.20%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.25&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;68&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;104&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;122&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;40% increased [[Elemental Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Alternating Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "70",
+      "required level": "70",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "95",
+      "required dexterity": "0",
+      "required intelligence": "131",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Alternating Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;41-61&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.30%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.45&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;70&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;95&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;131&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;Secrets of Suffering&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "1",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Sambar Sceptre",
+      "base item": "",
+      "class": "Sceptres",
+      "drop level": "70",
+      "required level": "70",
+      "size x": "2",
+      "size y": "3",
+      "required strength": "121",
+      "required dexterity": "0",
+      "required intelligence": "113",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Sambar Sceptre&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Sceptre&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;42-78&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.30&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;11&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;70&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;121&lt;/em&gt;&lt;/em&gt; Str, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;113&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;Damage Penetrates 6% [[Elemental Resistance|Elemental Resistances]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
   }
 ]

@@ -231,6 +231,23 @@ export class FilterService {
             config.minLinks
               ? `LinkedSockets >= ${Math.min(config.minLinks, item.maxSockets)}`
               : '',
+            `SetFontSize ${primaryChoice ? 40 : 32}`,
+          ],
+          script
+        );
+        this.generateBlock(
+          true,
+          [
+            `BaseType "${item.name}"`,
+            `ItemLevel < ${itemPlus2.dropLevel}`,
+            this.getRarity(config),
+            config.minSockets > 1
+              ? `Sockets >= ${Math.min(config.minSockets, item.maxSockets)}`
+              : '',
+            config.minLinks
+              ? `LinkedSockets >= ${Math.min(config.minLinks, item.maxSockets)}`
+              : '',
+            `SetFontSize ${primaryChoice ? 26 : 18}`,
           ],
           script
         );
