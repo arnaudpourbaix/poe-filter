@@ -14908,5 +14908,396 @@
       "is drop restricted": "0",
       "drop enabled": "1"
     }
+  },
+  {
+    "title": {
+      "name": "Driftwood Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "1",
+      "required level": "1",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "14",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Driftwood Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;5-9&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(8-12)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Goat's Horn",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "6",
+      "required level": "6",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "29",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Goat's Horn&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;9-16&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.20&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;6&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;29&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(10-14)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Carved Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "12",
+      "required level": "12",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "47",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Carved Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;9-17&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.50&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;12&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;47&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(11-15)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Quartz Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "18",
+      "required level": "18",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "65",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Quartz Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;14-27&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.30&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;18&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;65&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(18-22)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Spiraled Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "24",
+      "required level": "24",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "83",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Spiraled Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;12-37&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.30&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;24&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;83&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(15-19)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Assembler Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "30",
+      "required level": "30",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "101",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Assembler Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;16-30&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.50%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;30&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;101&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;Gain an Endurance, [[Frenzy]] or [[Power Charge]] every 6 seconds&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "1",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Sage Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "30",
+      "required level": "30",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "119",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Sage Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;23-42&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;8.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.20&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;30&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;119&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(17-21)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Pagan Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "34",
+      "required level": "34",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "118",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Pagan Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;22-40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.35&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;34&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;118&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;10% increased [[Cast Speed]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Faun's Horn",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "35",
+      "required level": "35",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "116",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Faun's Horn&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;26-48&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.20&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;35&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;116&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(20-24)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Engraved Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "40",
+      "required level": "40",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "131",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Engraved Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;21-38&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.50&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;40&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;131&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(22-26)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Crystal Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "45",
+      "required level": "45",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "146",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Crystal Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;28-52&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.30&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;45&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;146&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(29-33)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Serpent Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "49",
+      "required level": "49",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "158",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Serpent Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;21-64&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.30&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;49&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;158&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(26-30)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Congregator Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "50",
+      "required level": "50",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "168",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Congregator Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;25-46&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.50%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;50&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;168&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;Gain an Endurance, [[Frenzy]] or [[Power Charge]] every 6 seconds&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "1",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Omen Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "53",
+      "required level": "53",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "200",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Omen Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;33-61&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;8.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.20&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;53&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;200&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(27-31)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Heathen Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "55",
+      "required level": "55",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "184",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Heathen Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;31-57&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.35&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;55&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;184&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;10% increased [[Cast Speed]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Demon's Horn",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "56",
+      "required level": "56",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "179",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Demon's Horn&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;38-70&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.20&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;56&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;179&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(31-35)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Imbued Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "59",
+      "required level": "59",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "188",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Imbued Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;28-53&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.50&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;59&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;188&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(33-37)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Opal Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "62",
+      "required level": "62",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "212",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Opal Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;35-65&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.30&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;62&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;212&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(38-42)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Tornado Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "65",
+      "required level": "65",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "212",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Tornado Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;25-75&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.30&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;65&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;212&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(35-39)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Prophecy Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "68",
+      "required level": "68",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "245",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Prophecy Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;35-64&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;8.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.20&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;68&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;245&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;(36-40)% increased [[Spell Damage]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Accumulator Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "70",
+      "required level": "70",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "237",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Accumulator Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;29-54&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.50%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;70&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;237&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;Gain an Endurance, [[Frenzy]] or [[Power Charge]] every 6 seconds&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "1",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Profane Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "70",
+      "required level": "70",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "237",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Profane Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;33-61&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.35&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;70&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;237&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;14% increased [[Cast Speed]]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
+  },
+  {
+    "title": {
+      "name": "Convoking Wand",
+      "base item": "",
+      "class": "Wands",
+      "drop level": "72",
+      "required level": "72",
+      "size x": "1",
+      "size y": "3",
+      "required strength": "0",
+      "required dexterity": "0",
+      "required intelligence": "242",
+      "html": "&lt;span class=&quot;item-box -normal&quot;&gt;&lt;span class=&quot;header -single&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;Convoking Wand&lt;span class=&quot;symbol&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;item-stats&quot;&gt;&lt;span class=&quot;group &quot;&gt;&lt;em class=&quot;tc -default&quot;&gt;Wand&lt;/em&gt;&lt;br&gt;Physical Damage: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;30-56&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Critical Strike Chance: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;7.00%&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Attacks per Second: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;1.40&lt;/em&gt;&lt;/em&gt;&lt;br&gt;Weapon Range: &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;120&lt;/em&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class=&quot;group &quot;&gt;Requires Level &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;72&lt;/em&gt;&lt;/em&gt;, &lt;em class=&quot;tc -value&quot;&gt;&lt;em class=&quot;tc -value&quot;&gt;242&lt;/em&gt;&lt;/em&gt; Int&lt;/span&gt;&lt;span class=&quot;group tc -mod&quot;&gt;Can roll [[Minion]] Modifiers&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;",
+      "is drop restricted": "0",
+      "drop enabled": "1"
+    }
   }
 ]

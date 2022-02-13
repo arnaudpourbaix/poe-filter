@@ -6663,8 +6663,8 @@ Show # $type->exotic->archnemesis $tier->any
 	SetTextColor 74 230 58 255
 	SetBorderColor 74 230 58 255
 	SetBackgroundColor 0 0 0 255
-	PlayAlertSound 3 300
-	PlayEffect Green
+	#PlayAlertSound 3 300
+	#PlayEffect Green
 	MinimapIcon 1 Green Pentagon
 
 #------------------------------------
@@ -7419,134 +7419,6 @@ Show # %D2 $type->leveling->flasks->quality $tier->high
 	SetBorderColor 200 200 200 255
 	SetBackgroundColor 130 110 110 255
 
-#Show # %D1 $type->leveling->flasks->quality $tier->any
-#	Quality >= 1
-#	Class "Flask"
-#	SetFontSize 35
-#	SetTextColor 0 0 0 255
-#	SetBorderColor 0 0 0 255
-#	SetBackgroundColor 130 110 110 255
-
-#------------------------------------
-#   [4601] Hybrid flasks
-#------------------------------------
-# !! Override 820 : "leveling life and mana flasks"
-
-Show # %H2 $type->leveling->flasks->hybrid $tier->t1
-	AreaLevel <= 20
-	Class "Hybrid Flask"
-	BaseType "Small"
-	SetFontSize 40
-	SetBorderColor 100 0 100
-
-Show # %H2 $type->leveling->flasks->hybrid $tier->t2
-	AreaLevel <= 30
-	Class "Hybrid Flask"
-	BaseType "Medium"
-	SetFontSize 40
-	SetBorderColor 100 0 100
-
-Show # %H2 $type->leveling->flasks->hybrid $tier->t3
-	AreaLevel <= 40
-	Class "Hybrid Flask"
-	BaseType "Large"
-	SetFontSize 40
-	SetBorderColor 100 0 100
-
-Show # %H2 $type->leveling->flasks->hybrid $tier->t4
-	AreaLevel <= 50
-	Class "Hybrid Flask"
-	BaseType "Colossal"
-	SetFontSize 40
-	SetBorderColor 100 0 100
-
-Show # %H2 $type->leveling->flasks->hybrid $tier->t5
-	AreaLevel <= 60
-	Class "Hybrid Flask"
-	BaseType "Sacred"
-	SetFontSize 40
-	SetBorderColor 100 0 100
-
-Show # %H2 $type->leveling->flasks->hybrid $tier->t6
-	AreaLevel <= 67
-	Class "Hybrid Flask"
-	BaseType "Hallowed"
-	SetFontSize 40
-	SetBorderColor 100 0 100
-
-#------------------------------------
-#   [4602] Life flasks
-#------------------------------------
-
-Show # $type->leveling->flasks->life $tier->t1
-	AreaLevel <= 5
-	Class "Life Flask"
-	BaseType "Small"
-	SetFontSize 40
-	SetBorderColor 120 0 0
-
-Show # $type->leveling->flasks->life $tier->t2
-	AreaLevel <= 8
-	Class "Life Flask"
-	BaseType "Medium"
-	SetFontSize 40
-	SetBorderColor 120 0 0
-
-Show # $type->leveling->flasks->life $tier->t3
-	AreaLevel <= 13
-	Class "Life Flask"
-	BaseType "Large"
-	SetFontSize 40
-	SetBorderColor 120 0 0
-
-Show # $type->leveling->flasks->life $tier->t4
-	AreaLevel <= 19
-	Class "Life Flask"
-	BaseType "Greater"
-	SetFontSize 40
-	SetBorderColor 120 0 0
-
-Show # $type->leveling->flasks->life $tier->t5
-	AreaLevel <= 25
-	Class "Life Flask"
-	BaseType "Grand"
-	SetFontSize 40
-	SetBorderColor 120 0 0
-
-Show # $type->leveling->flasks->life $tier->t6
-	AreaLevel <= 31
-	Class "Life Flask"
-	BaseType "Giant"
-	SetFontSize 40
-	SetBorderColor 120 0 0
-
-Show # $type->leveling->flasks->life $tier->t7
-	AreaLevel <= 37
-	Class "Life Flask"
-	BaseType "Colossal"
-	SetFontSize 40
-	SetBorderColor 120 0 0
-
-Show # $type->leveling->flasks->life $tier->t8
-	AreaLevel <= 43
-	Class "Life Flask"
-	BaseType "Sacred"
-	SetFontSize 40
-	SetBorderColor 120 0 0
-
-Show # $type->leveling->flasks->life $tier->t9
-	AreaLevel <= 51
-	Class "Life Flask"
-	BaseType "Hallowed"
-	SetFontSize 40
-	SetBorderColor 120 0 0
-
-Show # $type->leveling->flasks->life $tier->t10
-	AreaLevel <= 60
-	Class "Life Flask"
-	BaseType "Sanctified"
-	SetFontSize 40
-	SetBorderColor 120 0 0
 
 Show # $type->leveling->flasks->life $tier->t11
 	AreaLevel <= 68
@@ -7561,80 +7433,6 @@ Show # $type->leveling->flasks->life $tier->t12
 	BaseType "Eternal"
 	SetFontSize 40
 	SetBorderColor 120 0 0
-
-#------------------------------------
-#   [4603] Mana flasks
-#------------------------------------
-
-Show # $type->leveling->flasks->mana $tier->t1
-	AreaLevel <= 5
-	Class "Mana Flask"
-	BaseType "Small"
-	SetFontSize 40
-	SetBorderColor 0 0 120
-
-Show # $type->leveling->flasks->mana $tier->t2
-	AreaLevel <= 8
-	Class "Mana Flask"
-	BaseType "Medium"
-	SetFontSize 40
-	SetBorderColor 0 0 120
-
-Show # $type->leveling->flasks->mana $tier->t3
-	AreaLevel <= 13
-	Class "Mana Flask"
-	BaseType "Large"
-	SetFontSize 40
-	SetBorderColor 0 0 120
-
-Show # $type->leveling->flasks->mana $tier->t4
-	AreaLevel <= 19
-	Class "Mana Flask"
-	BaseType "Greater"
-	SetFontSize 40
-	SetBorderColor 0 0 120
-
-Show # $type->leveling->flasks->mana $tier->t5
-	AreaLevel <= 25
-	Class "Mana Flask"
-	BaseType "Grand"
-	SetFontSize 40
-	SetBorderColor 0 0 120
-
-Show # $type->leveling->flasks->mana $tier->t6
-	AreaLevel <= 31
-	Class "Mana Flask"
-	BaseType "Giant"
-	SetFontSize 40
-	SetBorderColor 0 0 120
-
-Show # $type->leveling->flasks->mana $tier->t7
-	AreaLevel <= 37
-	Class "Mana Flask"
-	BaseType "Colossal"
-	SetFontSize 40
-	SetBorderColor 0 0 120
-
-Show # $type->leveling->flasks->mana $tier->t8
-	AreaLevel <= 43
-	Class "Mana Flask"
-	BaseType "Sacred"
-	SetFontSize 40
-	SetBorderColor 0 0 120
-
-Show # $type->leveling->flasks->mana $tier->t9
-	AreaLevel <= 51
-	Class "Mana Flask"
-	BaseType "Hallowed"
-	SetFontSize 40
-	SetBorderColor 0 0 120
-
-Show # $type->leveling->flasks->mana $tier->t10
-	AreaLevel <= 60
-	Class "Mana Flask"
-	BaseType "Sanctified"
-	SetFontSize 40
-	SetBorderColor 0 0 120
 
 Show # $type->leveling->flasks->mana $tier->t11
 	AreaLevel <= 68
